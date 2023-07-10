@@ -3,11 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-    h1, span, a, button {
-        font-family: 'Hiragino Kaku Gothic Pro', 'WenQuanYi Zen Hei', '微軟正黑體', '蘋果儷中黑', -apple-system, Helvetica, Arial, sans-serif;
-    }
+	h1,
+	span,
+	a,
+	button {
+		font-family: "Hiragino Kaku Gothic Pro", "WenQuanYi Zen Hei",
+			"微軟正黑體", "蘋果儷中黑", -apple-system, Helvetica, Arial,
+			sans-serif;
+	}
 }
 
-html, body {
-    scroll-behavior: smooth;
+html,
+body {
+	scroll-behavior: smooth;
 }

@@ -1,31 +1,31 @@
 {
-  "name": "aws-community-day-2023",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "deploy": "pnpm build; aws s3 sync ./dist s3://staging.awscmd.tw/"
-  },
-  "dependencies": {
-    "@astrojs/react": "^2.2.1",
-    "@astrojs/tailwind": "^4.0.0",
-    "astro": "^2.8.0",
-    "class-variance-authority": "^0.6.1",
-    "clsx": "^1.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sharp": "^0.32.1",
-    "tailwind-merge": "^1.13.2",
-    "tailwindcss": "^3.3.2"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "prettier": "^3.0.0",
-    "prettier-plugin-tailwindcss": "^0.3.0"
-  }
+	"name": "aws-community-day-2023",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"deploy": "pnpm build; aws s3 sync ./dist s3://staging.awscmd.tw/"
+	},
+	"dependencies": {
+		"@astrojs/react": "^2.2.1",
+		"@astrojs/tailwind": "^4.0.0",
+		"astro": "^2.8.0",
+		"class-variance-authority": "^0.6.1",
+		"clsx": "^1.2.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"sharp": "^0.32.1",
+		"tailwind-merge": "^1.13.2",
+		"tailwindcss": "^3.3.2"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.14",
+		"@types/react-dom": "^18.2.6",
+		"prettier": "^3.0.0",
+		"prettier-plugin-tailwindcss": "^0.3.0"
+	}
 }
