@@ -10,7 +10,7 @@ export const WhyReason: FC<
 		<div
 			className="rounded-lg w-24 h-24 grid place-items-center flex-shrink-0"
 			style={{
-				background: "linear-gradient(135deg, #404040 0%, #000 100%);",
+				background: "linear-gradient(135deg, #404040 0%, #000 100%)",
 			}}
 		>
 			{children}
