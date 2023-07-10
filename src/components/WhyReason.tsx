@@ -16,7 +16,7 @@ export const WhyReason: FC<
 			{children}
 		</div>
 		<div className="flex flex-col gap-2">
-			<span className="text-xl">{title}</span>
+			<span className="text-xl font-medium">{title}</span>
 			<span className="text-lg">{description}</span>
 		</div>
 	</div>
