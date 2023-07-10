@@ -20,9 +20,6 @@ dependencies:
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
-  lucide-react:
-    specifier: ^0.259.0
-    version: 0.259.0(react@18.2.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -38,9 +35,6 @@ dependencies:
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
-  tailwindcss-animate:
-    specifier: ^1.0.6
-    version: 1.0.6(tailwindcss@3.3.2)
 
 devDependencies:
   '@types/react':
@@ -2266,14 +2260,6 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /lucide-react@0.259.0(react@18.2.0):
-    resolution: {integrity: sha512-dFBLc6jRDfcpD9NQ7NyFVa+YR3RHX6+bs+f/UiotvNPho+kd4WyeXWMCCchUf7i/pq3BAaHkbmtkbx/GxxHVUw==}
-    peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
-    dev: false
-
   /magic-string@0.27.0:
     resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
     engines: {node: '>=12'}
@@ -3615,14 +3601,6 @@ packages:
 
   /tailwind-merge@1.13.2:
     resolution: {integrity: sha512-R2/nULkdg1VR/EL4RXg4dEohdoxNUJGLMnWIQnPKL+O9Twu7Cn3Rxi4dlXkDzZrEGtR+G+psSXFouWlpTyLhCQ==}
-    dev: false
-
-  /tailwindcss-animate@1.0.6(tailwindcss@3.3.2):
-    resolution: {integrity: sha512-4WigSGMvbl3gCCact62ZvOngA+PRqhAn7si3TQ3/ZuPuQZcIEtVap+ENSXbzWhpojKB8CpvnIsrwBu8/RnHtuw==}
-    peerDependencies:
-      tailwindcss: '>=3.0.0 || insiders'
-    dependencies:
-      tailwindcss: 3.3.2
     dev: false
 
   /tailwindcss@3.3.2:

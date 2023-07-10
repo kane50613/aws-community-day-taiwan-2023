@@ -3,11 +3,12 @@ import { cn, containerStyle } from "@/lib/utils";
 import heroImage from "@/assets/hero.png";
 import { Image } from "astro:assets";
 import { CTAButton } from "@/components/CTAButton";
+import { EmailForm } from "./EmailForm";
 ---
 
 <div class={cn(containerStyle, "flex md:flex-row flex-col py-8 md:py-32 gap-8 md:gap-16")}>
 	<div class="flex flex-col justify-between gap-4">
-		<h1 class="text-4xl md:text-6xl leading-[150%] font-bold whitespace-nowrap">
+		<h1 class="text-4xl sm:text-5xl lg:text-6xl !leading-[150%] font-bold whitespace-nowrap">
 			專屬於 AWS <br />
 			社群愛好者的年會
 		</h1>
@@ -25,6 +26,6 @@ import { CTAButton } from "@/components/CTAButton";
 			<br />
 			在不同產業的技術應用中達到最佳實踐的技術。
 		</span>
-		<CTAButton />
+		<EmailForm client:idle />
 	</div>
 </div>
