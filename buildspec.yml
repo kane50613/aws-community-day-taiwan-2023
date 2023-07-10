@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pnpm --version
+      - pnpm i
+  pre_build:
+    commands:
+      - printenv > .env
+
+  build:
+    commands:
+      - echo Compiling the Node.js code
+      - pnpm build
+      -
+artifacts:
+  files:
+    - 'dist/**/*'
