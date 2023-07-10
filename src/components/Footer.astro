@@ -3,9 +3,9 @@ import { cn, containerStyle } from "../lib/utils";
 import logo from "@/assets/logo-white.svg";
 ---
 <div class="bg-[#232F3E] py-4">
-	<div class={cn(containerStyle, "flex justify-between items-center")}>
+	<div class={cn(containerStyle, "flex md:flex-row flex-col justify-between items-start md:items-center gap-8")}>
 		<img {...logo} class="h-16 w-auto" alt="AWS Community Day Taiwan Logo"/>
-		<ul class="flex items-end flex-col">
+		<ul class="flex md:items-end flex-col">
 			<li>
 				<a class="text-gray-300 py-2 block">活動條款</a>
 			</li>

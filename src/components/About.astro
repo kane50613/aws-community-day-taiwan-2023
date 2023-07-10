@@ -9,13 +9,13 @@ import experienceIcon from "@/assets/experience.svg";
 import toolIcon from "@/assets/tool.svg";
 ---
 
-<div id="about" class={cn(containerStyle, "flex flex-col gap-8 scroll-mt-16")}>
+<div id="about" class={cn(containerStyle, "flex flex-col py-8 md:py-0 gap-4 md:gap-8 scroll-mt-16")}>
 	<Image src={aboutImage} alt="About Community Day image" class="rounded-xl" style={{
 		boxShadow: "0px 4px 24px 4px rgba(0, 0, 0, 0.25)"
 	}}/>
-	<span class="text-xl leading-loose">AWS Community Day Taiwan 是一場從活動規劃、籌備到實踐，全由社群領袖發起的交流活動。活動將邀請來自 AWS 的全球用戶的專家與產業領導，透過技術交流、研討會及工作坊，彼此相互交流與學習，同時讓開發人員了解與認識 AWS 的最新技術與最佳實踐。</span>
+	<span class="md:text-xl leading-loose">AWS Community Day Taiwan 是一場從活動規劃、籌備到實踐，全由社群領袖發起的交流活動。活動將邀請來自 AWS 的全球用戶的專家與產業領導，透過技術交流、研討會及工作坊，彼此相互交流與學習，同時讓開發人員了解與認識 AWS 的最新技術與最佳實踐。</span>
 	<div class="flex py-8 gap-5 flex-col">
-		<h2 class="font-bold text-3xl leading-snug">你為什麼值得參與 <br/>AWS Community Day Taiwan</h2>
+		<h2 class="font-bold text-2xl md:text-3xl leading-snug">你為什麼值得參與 <br/>AWS Community Day Taiwan</h2>
 		<div class="grid md:grid-cols-2 gap-5">
 			<WhyReason title="與各領域專家學習" description="PeerTalk with local specialists">
 				<img {...learnIcon} alt="Learn" />
