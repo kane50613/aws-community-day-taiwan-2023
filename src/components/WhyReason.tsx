@@ -8,7 +8,7 @@ export const WhyReason: FC<
 > = ({ title, description, children }) => (
 	<div className="flex gap-4 items-center">
 		<div
-			className="rounded-lg w-24 h-24 grid place-items-center"
+			className="rounded-lg w-24 h-24 grid place-items-center flex-shrink-0"
 			style={{
 				background: "linear-gradient(135deg, #404040 0%, #000 100%);",
 			}}
