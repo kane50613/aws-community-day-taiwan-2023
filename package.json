@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "pnpm build; aws s3 sync ./dist s3://staging.awscmd.tw/"
   },
   "dependencies": {
     "@astrojs/react": "^2.2.1",

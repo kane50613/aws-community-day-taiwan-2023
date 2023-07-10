@@ -4,8 +4,5 @@ module.exports = {
 		extend: {
 			colors: {},
 		},
-		fontFamily: {
-			noto: ["Noto Sans TC", "sans-serif"],
-		},
 	},
 };

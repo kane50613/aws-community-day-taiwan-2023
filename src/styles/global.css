@@ -4,7 +4,7 @@
 
 @layer base {
     h1, span, a, button {
-        @apply font-noto;
+        font-family: 'Hiragino Kaku Gothic Pro', 'WenQuanYi Zen Hei', '微軟正黑體', '蘋果儷中黑', -apple-system, Helvetica, Arial, sans-serif;
     }
 }
 
