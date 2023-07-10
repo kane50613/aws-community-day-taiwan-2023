@@ -3,10 +3,7 @@ import { cn, containerStyle } from "@/lib/utils";
 import aboutImage from "@/assets/about.png";
 import { Image } from "astro:assets";
 import { WhyReason } from "./WhyReason";
-import learnIcon from "@/assets/learn.svg";
-import exploreIcon from "@/assets/explore.svg";
-import experienceIcon from "@/assets/experience.svg";
-import toolIcon from "@/assets/tool.svg";
+import { IconUserStar, IconSocial, IconSparkles, IconHandClick } from "@tabler/icons-react";
 ---
 
 <div id="about" class={cn(containerStyle, "flex flex-col py-8 md:py-0 gap-4 md:gap-8 scroll-mt-16")}>
@@ -18,16 +15,16 @@ import toolIcon from "@/assets/tool.svg";
 		<h2 class="font-bold text-2xl md:text-3xl leading-snug">你為什麼值得參與 <br/>AWS Community Day Taiwan</h2>
 		<div class="grid md:grid-cols-2 gap-5">
 			<WhyReason title="與各領域專家學習" description="PeerTalk with local specialists">
-				<img {...learnIcon} alt="Learn" />
+				<IconUserStar color="white" stroke="1.25" width="48" height="48"/>
 			</WhyReason>
 			<WhyReason title="拓展社群關係" description="Explore relationships with local technologist">
-				<img {...exploreIcon} alt="Explore" />
+				<IconSocial color="white" stroke="1.25" width="48" height="48"/>
 			</WhyReason>
 			<WhyReason title="獲得最新 AWS 技術秘辛" description="Gain insight on the latest topics and AWS services">
-				<img {...experienceIcon} alt="Experience" />
+				<IconSparkles color="white" stroke="1.25" width="48" height="48"/>
 			</WhyReason>
 			<WhyReason title="獲得 AWS 實作經驗" description="Gat hands-on experience with AWS">
-				<img {...toolIcon} alt="Tool" />
+				<IconHandClick color="white" stroke="1.25" width="48" height="48"/>
 			</WhyReason>
 		</div>
 	</div>

@@ -1,11 +1,13 @@
 ---
+import "@/styles/global.css";
 import Header from "../components/Header.astro";
 import About from "../components/About.astro";
 import Events from "../components/Events.astro";
 import Hero from "../components/Hero.astro";
-import "@/styles/global.css";
 import Footer from "../components/Footer.astro";
 import logoImage from "@/assets/logo-black.svg";
+import Sponsors from "../components/Sponsors.astro";
+import Speakers from "../components/Speakers.astro";
 
 ---
 
@@ -27,6 +29,8 @@ import logoImage from "@/assets/logo-black.svg";
 		<Hero/>
 	 	<About/>
 	 	<Events/>
+		<Speakers/>
+		<Sponsors/>
 		<Footer/>
 	</body>
 </html>
