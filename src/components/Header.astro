@@ -1,0 +1,31 @@
+---
+import { cn, containerStyle } from "@/lib/utils";
+import logo from "@/assets/logo-black.svg";
+import { CTAButton } from "@/components/CTAButton";
+---
+
+<div class="backdrop-blur-sm top-0 sticky z-50 bg-white/90">
+	<div
+		class={cn(
+			containerStyle,
+			"flex items-center justify-between h-16",
+		)}
+	>
+		<img {...logo} class="h-16 w-auto" alt="AWS Community Day Taiwan Logo" />
+		<ul class="flex items-center gap-8">
+			<li>
+				<a href="#about">關於我們</a>
+			</li>
+			<li>
+				<a href="#events">活動議程</a>
+			</li>
+			<li>
+				<a href="/">講師陣容</a>
+			</li>
+			<li>
+				<a href="/">合作企業</a>
+			</li>
+		</ul>
+		<CTAButton client:idle />
+	</div>
+</div>

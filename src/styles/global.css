@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1, span, a, button {
+        @apply font-noto;
+    }
+}
+
+html, body {
+    scroll-behavior: smooth;
+}

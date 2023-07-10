@@ -1,9 +1,19 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, sharpImageService } from "astro/config";
 import react from "@astrojs/react";
 
 import tailwind from "@astrojs/tailwind";
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind()]
+	integrations: [
+		react(),
+		tailwind({
+			applyBaseStyles: false,
+		}),
+	],
+	experimental: {
+		assets: true,
+	},
+	image: {
+		service: sharpImageService(),
+	},
 });

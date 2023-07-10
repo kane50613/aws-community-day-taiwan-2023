@@ -1,14 +1,27 @@
 ---
-import { Home } from "../components/Home";
+import Header from "../components/Header.astro";
+import About from "../components/About.astro";
+import Events from "../components/Events.astro";
+import Hero from "../components/Hero.astro";
+import "@/styles/global.css";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>Astro</title>
+		<title>專屬於 AWS 社群愛好者的年會</title>
 	</head>
-	<body class="bg-white flex flex-col gap-0 items-start justify-start w-full h-full relative overflow-x-hidden">
-		<Home/>
+	<body>
+		<Header/>
+		<Hero/>
+	 	<About/>
+	 	<Events/>
+		<Footer/>
 	</body>
 </html>
