@@ -9,7 +9,7 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"deploy:staging": "pnpm build; aws s3 rm --recursive s3://staging.awscmd.tw/_astro/; aws s3 sync ./dist s3://staging.awscmd.tw/",
-		"deploy": "pnpm build; aws s3 rm --recursive s3://awscmd.tw/_astro/; aws s3 sync ./dist s3://awscmd.tw/"
+		"deploy": "pnpm build; aws s3 rm --recursive s3://awscmd.tw/_astro/; aws s3 sync ./dist s3://awscmd.tw/; aws cloudfront create-invalidation --distribution-id E3M3YD0HPV4G0W --paths /*"
 	},
 	"dependencies": {
 		"@astrojs/react": "^2.2.1",
