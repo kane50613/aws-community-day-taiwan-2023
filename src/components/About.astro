@@ -1,6 +1,6 @@
 ---
 import { cn, containerStyle } from "@/lib/utils";
-import aboutImage from "@/assets/about.png";
+import aboutImage from "@/assets/about.jpg";
 import { Image } from "astro:assets";
 import { WhyReason } from "./WhyReason";
 import {
@@ -24,12 +24,13 @@ import {
 		width="1024"
 		src={aboutImage}
 		alt="About Community Day image"
-		class="rounded-xl"
+		class="rounded-xl object-cover"
 		style={{
-			boxShadow: "0px 4px 24px 4px rgba(0, 0, 0, 0.25)",
+			aspectRatio: 2,
+			boxShadow: "0px 4px 12px 2px rgba(0, 0, 0, 0.25)",
 		}}
 	/>
-	<span class="md:text-xl leading-loose"
+	<span class="leading-loose md:text-xl"
 		>AWS Community Day Taiwan
 		是一場從活動規劃、籌備到實踐，全由社群領袖發起的交流活動。活動將邀請來自
 		AWS
@@ -39,17 +40,17 @@ import {
 	<a
 		href="https://awscmd.tw/2022"
 		target="_blank"
-		class="text-blue-600 flex gap-2"
+		class="flex gap-2 text-blue-600"
 		>回顧AWS Community Day Taiwan 2022 <IconExternalLink
 			stroke="1.5"
 			width="1em"
 		/></a
 	>
-	<div class="flex py-8 gap-10 flex-col">
-		<h2 class="font-bold text-2xl md:text-3xl leading-snug">
+	<div class="flex flex-col gap-10 py-8">
+		<h2 class="text-2xl font-bold leading-snug md:text-3xl">
 			你為什麼值得參與 <br />AWS Community Day Taiwan
 		</h2>
-		<div class="grid md:grid-cols-2 gap-5">
+		<div class="grid gap-5 md:grid-cols-2">
 			<WhyReason
 				title="與各領域專家學習"
 				description="PeerTalk with local specialists"
