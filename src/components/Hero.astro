@@ -9,19 +9,22 @@ import { EmailForm } from "./EmailForm";
 <div
 	class={cn(
 		containerStyle,
-		"flex md:flex-row flex-col py-8 md:py-32 gap-8 md:gap-16",
+		"flex md:flex-row flex-col py-8 md:py-32 gap-8 md:gap-12",
 	)}
 >
-	<div class="flex flex-col justify-between gap-4">
+	<div class="flex flex-shrink-0 flex-col justify-between gap-4">
 		<h1
-			class="text-4xl sm:text-5xl lg:text-6xl !leading-[150%] font-bold whitespace-nowrap"
+			class="whitespace-nowrap text-4xl font-bold !leading-relaxed sm:text-5xl lg:text-6xl"
 		>
 			專屬於 AWS <br />
 			社群愛好者的年會
 		</h1>
-		<span class="text-lg md:text-2xl font-medium">
-			2023/08/26 (星期六) <br />
-			台中集思新烏日會議中心 (高鐵台中站內)
+		<span
+			class="text-md font-medium !leading-loose text-gray-800 md:text-2xl"
+		>
+			致力於 AWS 愛好者之雲端技術交流與分享，
+			<br />
+			在不同產業的技術應用中達到最佳實踐的技術。
 		</span>
 	</div>
 	<div class="flex flex-col gap-4">
@@ -31,12 +34,9 @@ import { EmailForm } from "./EmailForm";
 			src={heroImage}
 			alt="AWS User Group Taiwan"
 		/>
-		<span class="leading-loose md:text-md text-sm text-gray-800">
-			AWS User Group Taiwan 是一個位於台灣社群愛好者組織，
-			<br />
-			致力於 AWS 愛好者之雲端技術交流與分享，
-			<br />
-			在不同產業的技術應用中達到最佳實踐的技術。
+		<span class="md:text-md text-sm leading-loose text-gray-800">
+			2023/08/26 (星期六) <br />
+			台中集思新烏日會議中心 (高鐵台中站內)
 		</span>
 		<EmailForm client:idle />
 	</div>
