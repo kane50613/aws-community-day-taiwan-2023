@@ -4,16 +4,16 @@ import logo from "@/assets/logo-black.svg";
 import { CTAButton } from "@/components/CTAButton";
 ---
 
-<div class="backdrop-blur-sm top-0 sticky z-50 bg-white/90">
+<div class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm">
 	<div class={cn(containerStyle, "flex items-center justify-between h-16")}>
 		<a href="#">
 			<img
 				{...logo}
-				class="h-12 md:h-14 w-auto"
+				class="h-12 w-auto md:h-14"
 				alt="AWS Community Day Taiwan Logo"
 			/>
 		</a>
-		<ul class="md:flex hidden items-center gap-8">
+		<ul class="hidden items-center gap-8 md:flex">
 			<li>
 				<a href="#about">關於我們</a>
 			</li>
@@ -27,7 +27,7 @@ import { CTAButton } from "@/components/CTAButton";
 				<a href="#sponsors">合作企業</a>
 			</li>
 		</ul>
-		<a href="#">
+		<a href="#" onclick="document.querySelector('input')?.focus()">
 			<CTAButton />
 		</a>
 	</div>

@@ -15,10 +15,10 @@ import logo from "@/assets/logo-white.svg";
 			class="h-16 w-auto"
 			alt="AWS Community Day Taiwan Logo"
 		/>
-		<ul class="flex md:items-end flex-col">
+		<ul class="flex flex-col md:items-end">
 			<li>
 				<a
-					class="text-gray-300 py-2 block"
+					class="block py-2 text-gray-300"
 					href="https://aws.amazon.com/tw/privacy/"
 					rel="nofollow noopener"
 					target="_blank">活動條款</a
@@ -26,14 +26,19 @@ import logo from "@/assets/logo-white.svg";
 			</li>
 			<li>
 				<a
-					class="text-gray-300 py-2 block"
+					class="block py-2 text-gray-300"
 					href="https://www.facebook.com/groups/awsugtw"
 					rel="nofollow noopener"
 					target="_blank">Facebook</a
 				>
 			</li>
 			<li>
-				<a class="text-gray-300 py-2 block" href="#">訂閱電子報</a>
+				<a
+					href="#"
+					class="block cursor-pointer py-2 text-gray-300"
+					onclick="document.querySelector('input')?.focus()"
+					>訂閱電子報</a
+				>
 			</li>
 		</ul>
 	</div>
