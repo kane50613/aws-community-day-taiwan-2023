@@ -37,10 +37,10 @@ export const EmailForm = () => {
 
 	return (
 		<form className="flex gap-2 w-full" onSubmit={onSubmit}>
-			<label>
+			<label className="flex-grow">
 				<input
 					ref={email}
-					className="bg-gray-200 block h-full placeholder:text-sm flex-grow rounded-lg px-4 outline-gray-700"
+					className="bg-gray-200 block w-full h-full placeholder:text-sm rounded-lg px-4 outline-gray-700"
 					type="email"
 					required
 					placeholder="電子郵件"
