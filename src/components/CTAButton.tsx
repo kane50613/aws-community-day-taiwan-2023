@@ -9,7 +9,7 @@ export const CTAButton: FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({
 			background: "linear-gradient(45deg, #FFA857 0%, #FFDB59 100%)",
 			boxShadow: "0px 4px 12px 4px rgba(255, 186, 83, 0.25)",
 		}}
-		className="gap-3 py-2 px-6 rounded-lg text-sm md:text-md w-fit whitespace-nowrap"
+		className="md:text-md w-fit gap-3 whitespace-nowrap rounded-lg px-6 py-2 text-sm"
 		{...props}
 	>
 		訂閱電子報
