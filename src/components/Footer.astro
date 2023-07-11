@@ -2,15 +2,35 @@
 import { cn, containerStyle } from "../lib/utils";
 import logo from "@/assets/logo-white.svg";
 ---
+
 <div class="bg-[#232F3E] py-4">
-	<div class={cn(containerStyle, "flex md:flex-row flex-col justify-between items-start md:items-center gap-8")}>
-		<img {...logo} class="h-16 w-auto" alt="AWS Community Day Taiwan Logo"/>
+	<div
+		class={cn(
+			containerStyle,
+			"flex md:flex-row flex-col justify-between items-start md:items-center gap-8",
+		)}
+	>
+		<img
+			{...logo}
+			class="h-16 w-auto"
+			alt="AWS Community Day Taiwan Logo"
+		/>
 		<ul class="flex md:items-end flex-col">
 			<li>
-				<a class="text-gray-300 py-2 block" href="https://aws.amazon.com/tw/privacy/" rel="nofollow noopener" target="_blank">活動條款</a>
+				<a
+					class="text-gray-300 py-2 block"
+					href="https://aws.amazon.com/tw/privacy/"
+					rel="nofollow noopener"
+					target="_blank">活動條款</a
+				>
 			</li>
 			<li>
-				<a class="text-gray-300 py-2 block" href="https://www.facebook.com/groups/awsugtw" rel="nofollow noopener" target="_blank">Facebook</a>
+				<a
+					class="text-gray-300 py-2 block"
+					href="https://www.facebook.com/groups/awsugtw"
+					rel="nofollow noopener"
+					target="_blank">Facebook</a
+				>
 			</li>
 			<li>
 				<a class="text-gray-300 py-2 block" href="#">訂閱電子報</a>

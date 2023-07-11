@@ -11,73 +11,91 @@ import Speakers from "../components/Speakers.astro";
 const eventSchema = {
 	"@context": "https://schema.org",
 	"@type": "Event",
-	"name": "AWS Community Day Taiwan 2023",
-	"description": "AWS Community Day Taiwan 是由 AWS User Group Taiwan 社群夥伴們一同號召發起的年度社群活動，這是一場能夠讓大家透過交流活動增進自我、學習成長、聯繫認識的重要機會！",
-	"startDate": "2023-08-26T09:30:00+08:00",
-	"endDate": "2023-08-26T16:30:00+08:00",
-	"eventStatus": "https://schema.org/EventScheduled",
-	"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-	"location": {
+	name: "AWS Community Day Taiwan 2023",
+	description:
+		"AWS Community Day Taiwan 是由 AWS User Group Taiwan 社群夥伴們一同號召發起的年度社群活動，這是一場能夠讓大家透過交流活動增進自我、學習成長、聯繫認識的重要機會！",
+	startDate: "2023-08-26T09:30:00+08:00",
+	endDate: "2023-08-26T16:30:00+08:00",
+	eventStatus: "https://schema.org/EventScheduled",
+	eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+	location: {
 		"@type": "Place",
-		"name": "集思台中新烏日會議中心 (Taichung Xinwuri Convention Center)",
-		"address": {
+		name: "集思台中新烏日會議中心 (Taichung Xinwuri Convention Center)",
+		address: {
 			"@type": "PostalAddress",
-			"streetAddress": "3F, No.26, Gaotie East 1st Rd, Wuri Dist.",
-			"addressLocality": "Taichung City",
-			"postalCode": "41456",
-			"addressRegion": "TW",
-			"addressCountry": "TW"
-		}
+			streetAddress: "3F, No.26, Gaotie East 1st Rd, Wuri Dist.",
+			addressLocality: "Taichung City",
+			postalCode: "41456",
+			addressRegion: "TW",
+			addressCountry: "TW",
+		},
 	},
 
-	"image": [
-		"https://pages.awscmd.tw/pre-2023/assets/img/og-1200x630.png"
-	],
-	"offers": {
+	image: ["https://pages.awscmd.tw/pre-2023/assets/img/og-1200x630.png"],
+	offers: {
 		"@type": "Offer",
-		"url": "https://awscmd.tw",
-		"price": "0",
-		"priceCurrency": "TWD",
-		"availability": "https://schema.org/InStock",
-		"validFrom": "2023-04-15"
+		url: "https://awscmd.tw",
+		price: "0",
+		priceCurrency: "TWD",
+		availability: "https://schema.org/InStock",
+		validFrom: "2023-04-15",
 	},
-	"performer": {
+	performer: {
 		"@type": "PerformingGroup",
-		"name": "AWS User Group Taiwan"
+		name: "AWS User Group Taiwan",
 	},
-	"organizer": {
+	organizer: {
 		"@type": "Organization",
-		"name": "AWS User Group Taiwan",
-		"url": "https://www.facebook.com/groups/awsugtw"
-	}
+		name: "AWS User Group Taiwan",
+		url: "https://www.facebook.com/groups/awsugtw",
+	},
 };
-
 ---
 
 <html lang="zh-Hant-TW">
 	<head>
-		<title>AWS Community Day Taiwan 2023 - 專屬於 AWS 社群愛好者的年會</title>
+		<title>
+			AWS Community Day Taiwan 2023 - 專屬於 AWS 社群愛好者的年會
+		</title>
 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="AWS Community Day Taiwan 是一場從活動規劃、籌備到實踐，全由社群領袖發起的交流活動。活動將邀請來自 AWS 的全球用戶的專家與產業領導，透過技術交流、研討會及工作坊，彼此相互交流與學習，同時讓開發人員了解與認識 AWS 的最新技術與最佳實踐。"/>
-		<meta name="og:title" content="AWS Community Day Taiwan 2023 - 專屬於 AWS 社群愛好者的年會"/>
-		<meta name="og:description" content="AWS Community Day Taiwan 是一場從活動規劃、籌備到實踐，全由社群領袖發起的交流活動。活動將邀請來自 AWS 的全球用戶的專家與產業領導，透過技術交流、研討會及工作坊，彼此相互交流與學習，同時讓開發人員了解與認識 AWS 的最新技術與最佳實踐。"/>
-		<meta name="og:image" content="https://pages.awscmd.tw/pre-2023/assets/img/og-1200x630.png"/>
-		<meta name="twitter:card" content="summary_large_image"/>
+		<meta
+			name="description"
+			content="AWS Community Day Taiwan 是一場從活動規劃、籌備到實踐，全由社群領袖發起的交流活動。活動將邀請來自 AWS 的全球用戶的專家與產業領導，透過技術交流、研討會及工作坊，彼此相互交流與學習，同時讓開發人員了解與認識 AWS 的最新技術與最佳實踐。"
+		/>
+		<meta
+			name="og:title"
+			content="AWS Community Day Taiwan 2023 - 專屬於 AWS 社群愛好者的年會"
+		/>
+		<meta
+			name="og:description"
+			content="AWS Community Day Taiwan 是一場從活動規劃、籌備到實踐，全由社群領袖發起的交流活動。活動將邀請來自 AWS 的全球用戶的專家與產業領導，透過技術交流、研討會及工作坊，彼此相互交流與學習，同時讓開發人員了解與認識 AWS 的最新技術與最佳實踐。"
+		/>
+		<meta
+			name="og:image"
+			content="https://pages.awscmd.tw/pre-2023/assets/img/og-1200x630.png"
+		/>
+		<meta name="twitter:card" content="summary_large_image" />
 
-		<link rel="shortcut icon" href="https://pages.awscmd.tw/pre-2023/assets/img/og-1200x630.png"/>
+		<link
+			rel="shortcut icon"
+			href="https://pages.awscmd.tw/pre-2023/assets/img/og-1200x630.png"
+		/>
 		<link rel="canonical" href="https://awscmd.tw/" />
 
-		<script type="application/ld+json" set:html={JSON.stringify(eventSchema)}/>
+		<script
+			type="application/ld+json"
+			set:html={JSON.stringify(eventSchema)}
+		/>
 	</head>
 	<body>
-		<Header/>
-		<Hero/>
-	 	<About/>
-	 	<Events/>
-		<Speakers/>
-		<Sponsors/>
-		<Footer/>
+		<Header />
+		<Hero />
+		<About />
+		<Events />
+		<Speakers />
+		<Sponsors />
+		<Footer />
 	</body>
 </html>

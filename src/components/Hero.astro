@@ -6,9 +6,16 @@ import { CTAButton } from "@/components/CTAButton";
 import { EmailForm } from "./EmailForm";
 ---
 
-<div class={cn(containerStyle, "flex md:flex-row flex-col py-8 md:py-32 gap-8 md:gap-16")}>
+<div
+	class={cn(
+		containerStyle,
+		"flex md:flex-row flex-col py-8 md:py-32 gap-8 md:gap-16",
+	)}
+>
 	<div class="flex flex-col justify-between gap-4">
-		<h1 class="text-4xl sm:text-5xl lg:text-6xl !leading-[150%] font-bold whitespace-nowrap">
+		<h1
+			class="text-4xl sm:text-5xl lg:text-6xl !leading-[150%] font-bold whitespace-nowrap"
+		>
 			專屬於 AWS <br />
 			社群愛好者的年會
 		</h1>
@@ -18,7 +25,12 @@ import { EmailForm } from "./EmailForm";
 		</span>
 	</div>
 	<div class="flex flex-col gap-4">
-		<Image loading="auto" width="512" src={heroImage} alt="AWS User Group Taiwan" />
+		<Image
+			loading="auto"
+			width="512"
+			src={heroImage}
+			alt="AWS User Group Taiwan"
+		/>
 		<span class="leading-loose md:text-md text-sm text-gray-800">
 			AWS User Group Taiwan 是一個位於台灣社群愛好者組織，
 			<br />

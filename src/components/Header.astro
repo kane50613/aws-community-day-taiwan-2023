@@ -5,14 +5,13 @@ import { CTAButton } from "@/components/CTAButton";
 ---
 
 <div class="backdrop-blur-sm top-0 sticky z-50 bg-white/90">
-	<div
-		class={cn(
-			containerStyle,
-			"flex items-center justify-between h-16",
-		)}
-	>
+	<div class={cn(containerStyle, "flex items-center justify-between h-16")}>
 		<a href="#">
-			<img {...logo} class="h-12 md:h-14 w-auto" alt="AWS Community Day Taiwan Logo" />
+			<img
+				{...logo}
+				class="h-12 md:h-14 w-auto"
+				alt="AWS Community Day Taiwan Logo"
+			/>
 		</a>
 		<ul class="md:flex hidden items-center gap-8">
 			<li>
