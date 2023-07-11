@@ -37,12 +37,15 @@ export const EmailForm = () => {
 
 	return (
 		<form className="flex gap-2 w-full" onSubmit={onSubmit}>
-			<input
-				ref={email}
-				className="bg-gray-200 flex-grow rounded-lg px-4 outline-gray-700"
-				type="email"
-				required
-			/>
+			<label>
+				<input
+					ref={email}
+					className="bg-gray-200 block h-full placeholder:text-sm flex-grow rounded-lg px-4 outline-gray-700"
+					type="email"
+					required
+					placeholder="電子郵件"
+				/>
+			</label>
 			<CTAButton type="submit" />
 		</form>
 	);
