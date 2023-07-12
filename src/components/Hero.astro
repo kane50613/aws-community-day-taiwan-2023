@@ -27,12 +27,16 @@ import { EmailForm } from "./EmailForm";
 			在不同產業的技術應用中達到最佳實踐的技術。
 		</span>
 	</div>
-	<div class="flex flex-col gap-4">
+	<div class="flex w-full flex-col gap-4">
 		<Image
 			loading="auto"
 			width="512"
 			src={heroImage}
 			alt="AWS User Group Taiwan"
+			class="h-full w-full rounded-lg"
+			style={{
+				aspectRatio: heroImage.width / heroImage.height,
+			}}
 		/>
 		<span class="md:text-md text-sm leading-loose text-gray-800">
 			2023/08/26 (星期六) <br />
