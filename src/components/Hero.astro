@@ -1,6 +1,6 @@
 ---
 import { cn, containerStyle } from "@/lib/utils";
-import heroImage from "@/assets/hero.png";
+import heroImage from "@/assets/hero.jpg";
 import { Image } from "astro:assets";
 import { CTAButton } from "@/components/CTAButton";
 import { EmailForm } from "./EmailForm";
@@ -29,11 +29,11 @@ import { EmailForm } from "./EmailForm";
 	</div>
 	<div class="flex w-full flex-col gap-4">
 		<Image
-			loading="auto"
+			loading="eager"
 			width="512"
 			src={heroImage}
 			alt="AWS User Group Taiwan"
-			class="h-full w-full rounded-lg"
+			class="w-full rounded-lg"
 			style={{
 				aspectRatio: heroImage.width / heroImage.height,
 			}}
