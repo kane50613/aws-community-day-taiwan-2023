@@ -1,0 +1,20 @@
+---
+import { cn, containerStyle } from "../lib/utils";
+import aws from "@/assets/aws.svg";
+import netron from "@/assets/netron.svg";
+---
+
+<div id="sponsors" class="scroll-mt-16 py-12 md:py-16">
+	<div class={cn(containerStyle, "flex flex-col gap-8")}>
+		<h2 class="text-2xl font-bold leading-snug md:text-3xl">合作企業</h2>
+		<ul class="grid grid-cols-3 py-8">
+			<li>
+				<img {...aws} alt="AWS Logo" class="h-16" />
+			</li>
+			<li>
+				<img {...netron} alt="Netron 網創資訊 Logo" class="h-16" />
+			</li>
+		</ul>
+		<span>更多企業持續加入中，敬請期待</span>
+	</div>
+</div>
