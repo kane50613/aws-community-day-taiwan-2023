@@ -4,6 +4,8 @@ import aws from "@/assets/aws.svg";
 import _104 from "@/assets/104.svg";
 import netron from "@/assets/netron.svg";
 import PartnerBrand from "./PartnerBrand.astro";
+
+const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
 ---
 
 <div id="sponsors" class="scroll-mt-16 py-12 md:py-16">
@@ -18,9 +20,13 @@ import PartnerBrand from "./PartnerBrand.astro";
 			<PartnerBrand href="https://www.netron.asia/">
 				<img {...netron} alt="Netron 網創資訊 Logo" class="h-16" />
 			</PartnerBrand>
-			<PartnerBrand href="https://104.com.tw/">
-				<img {..._104} alt="104 Logo" class="h-16" />
-			</PartnerBrand>
+			{
+				isStaging && (
+					<PartnerBrand href="https://104.com.tw/">
+						<img {..._104} alt="104 Logo" class="h-16" />
+					</PartnerBrand>
+				)
+			}
 		</ul>
 		<span>更多企業持續加入中，敬請期待</span>
 	</div>
