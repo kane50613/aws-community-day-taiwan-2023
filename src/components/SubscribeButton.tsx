@@ -8,9 +8,9 @@ export const SubscribeButton: FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({
 		style={{
 			background: "linear-gradient(45deg, #FFA857 0%, #FFDB59 100%)",
 		}}
-		className="md:text-md w-fit gap-3 whitespace-nowrap rounded-lg px-6 py-2 text-sm"
+		className="md:text-md w-fit gap-3 whitespace-nowrap rounded-lg px-5 py-2 text-sm"
 		{...props}
 	>
-		訂閱電子報
+		送出
 	</button>
 );

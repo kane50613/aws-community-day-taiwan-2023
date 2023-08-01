@@ -1,0 +1,21 @@
+---
+import { cn, containerStyle } from "../lib/utils";
+import { EmailForm } from "./EmailForm";
+---
+
+<div
+	class={cn(
+		containerStyle,
+		"flex flex-col md:flex-row justify-center gap-4 md:gap-6 md:items-center my-8 relative",
+	)}
+>
+	<div class="flex flex-col gap-2 md:items-end">
+		<h2 class="text-2xl font-medium">訂閱電子報</h2>
+		<span class="text-black/80">搶先收到活動第一手消息</span>
+	</div>
+	<div class="hidden w-[2px] self-stretch rounded-lg bg-black/30 md:block">
+	</div>
+	<div class="w-full max-w-sm">
+		<EmailForm client:visible />
+	</div>
+</div>

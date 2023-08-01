@@ -5,6 +5,7 @@ import _104 from "@/assets/104.svg";
 import netron from "@/assets/netron.svg";
 import iSweety from "@/assets/isweety.png";
 import PartnerBrand from "./PartnerBrand.astro";
+import ecv from "@/assets/ecv.svg";
 import { Image } from "astro:assets";
 
 const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
@@ -21,6 +22,13 @@ const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
 			</PartnerBrand>
 			<PartnerBrand href="https://www.netron.asia/">
 				<img {...netron} alt="Netron 網創資訊 Logo" class="h-16" />
+			</PartnerBrand>
+			<PartnerBrand href="https://www.ecloudvalley.com/tw/">
+				<img
+					{...ecv}
+					alt="eCloudvalley 伊雲谷數位科技 Logo"
+					class="h-16"
+				/>
 			</PartnerBrand>
 			<PartnerBrand href="https://104.com.tw/">
 				<img {..._104} alt="104 Logo" class="h-16" />

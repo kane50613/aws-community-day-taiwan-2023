@@ -1,6 +1,5 @@
 import { SubscribeButton } from "@/components/SubscribeButton";
 import { FormEvent, useCallback, useRef } from "react";
-import { CTAEventButton } from "@/components/CTAEventButton";
 
 export const EmailForm = () => {
 	const email = useRef<HTMLInputElement>(null);
@@ -37,7 +36,7 @@ export const EmailForm = () => {
 	);
 
 	return (
-		<form className="flex w-full gap-2" onSubmit={onSubmit}>
+		<form className="flex w-full gap-4" onSubmit={onSubmit}>
 			<label className="flex-grow">
 				<input
 					ref={email}
@@ -48,7 +47,6 @@ export const EmailForm = () => {
 				/>
 			</label>
 			<SubscribeButton type="submit" />
-			<CTAEventButton />
 		</form>
 	);
 };
