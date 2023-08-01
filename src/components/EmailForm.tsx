@@ -1,5 +1,6 @@
-import { CTAButton } from "@/components/CTAButton";
+import { SubscribeButton } from "@/components/SubscribeButton";
 import { FormEvent, useCallback, useRef } from "react";
+import { CTAEventButton } from "@/components/CTAEventButton";
 
 export const EmailForm = () => {
 	const email = useRef<HTMLInputElement>(null);
@@ -46,7 +47,8 @@ export const EmailForm = () => {
 					placeholder="電子郵件"
 				/>
 			</label>
-			<CTAButton type="submit" />
+			<SubscribeButton type="submit" />
+			<CTAEventButton />
 		</form>
 	);
 };

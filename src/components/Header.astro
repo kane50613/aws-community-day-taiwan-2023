@@ -1,12 +1,10 @@
 ---
 import { cn, containerStyle } from "@/lib/utils";
 import logo from "@/assets/logo-black.svg";
-import { CTAButton } from "@/components/CTAButton";
-import Banner from "./Banner.astro";
+import { CTAEventButton } from "./CTAEventButton";
 ---
 
 <div class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm">
-	<Banner />
 	<div class={cn(containerStyle, "flex items-center justify-between h-16")}>
 		<a href="#">
 			<img
@@ -29,8 +27,6 @@ import Banner from "./Banner.astro";
 				<a href="#sponsors">合作企業</a>
 			</li>
 		</ul>
-		<a href="#" onclick="document.querySelector('input')?.focus()">
-			<CTAButton />
-		</a>
+		<CTAEventButton />
 	</div>
 </div>
