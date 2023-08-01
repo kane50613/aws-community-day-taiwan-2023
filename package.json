@@ -8,7 +8,7 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"deploy:staging": "NODE_ENV=staging pnpm build; aws s3 rm --recursive s3://staging.awscmd.tw/_astro/ --no-cli-auto-prompt --profile cmd; aws s3 sync ./dist s3://staging.awscmd.tw/ --no-cli-auto-prompt --profile cmd",
+		"deploy:staging": "NODE_ENV=staging pnpm build; aws s3 rm --recursive s3://staging.awscmd.tw/_astro/ --no-cli-auto-prompt --profile cmd; aws s3 sync ./dist s3://staging.awscmd.tw/ --no-cli-auto-prompt --profile cmd; aws cloudfront create-invalidation --distribution-id E2IR73S6GAYL5W --paths \"/*\" --profile cmd --no-cli-auto-prompt",
 		"deploy": "pnpm build; aws s3 rm --recursive s3://awscmd.tw/_astro/ --no-cli-auto-prompt --profile cmd; aws s3 sync ./dist s3://awscmd.tw/ --profile cmd --no-cli-auto-prompt; aws cloudfront create-invalidation --distribution-id E3M3YD0HPV4G0W --paths \"/*\" --profile cmd --no-cli-auto-prompt"
 	},
 	"dependencies": {
