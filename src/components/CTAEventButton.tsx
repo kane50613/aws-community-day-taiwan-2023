@@ -16,6 +16,7 @@ export const CTAEventButton: FC<ButtonHTMLAttributes<HTMLAnchorElement>> = ({
 			"md:text-md w-fit gap-3 whitespace-nowrap rounded-lg px-6 py-2 text-sm text-white",
 			props.className,
 		)}
+		target="_blank"
 	>
 		立即報名
 	</a>
