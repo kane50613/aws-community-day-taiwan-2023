@@ -6,7 +6,7 @@ export const CTAEventButton: FC<ButtonHTMLAttributes<HTMLAnchorElement>> = ({
 	...props
 }) => (
 	<a
-		href="https://events.awscmd.tw/events/aws-community-day-2023"
+		href="https://events.awscmd.tw/events/aws-community-day-2023/enter"
 		style={{
 			background: "linear-gradient(to right, #4776E6 0%, #8E54E9 100%)",
 			boxShadow: "0px 4px 12px 2px rgba(142, 84, 233, 0.25)",
