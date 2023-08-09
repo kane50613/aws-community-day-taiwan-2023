@@ -6,9 +6,10 @@ import netron from "@/assets/netron.svg";
 import iSweety from "@/assets/isweety.png";
 import PartnerBrand from "./PartnerBrand.astro";
 import ecv from "@/assets/ecv.svg";
+import kspdigi from "@/assets/kspdigi.svg";
 import { Image } from "astro:assets";
 
-// const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
+const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
 ---
 
 <div id="sponsors" class="scroll-mt-16 py-12 md:py-16">
@@ -36,6 +37,18 @@ import { Image } from "astro:assets";
 					loading="lazy"
 				/>
 			</PartnerBrand>
+			{
+				isStaging && (
+					<PartnerBrand href="https://www.facebook.com/kspdigi/">
+						<img
+							{...kspdigi}
+							alt="智慧高軟 Logo"
+							class="h-16 w-auto"
+							loading="lazy"
+						/>
+					</PartnerBrand>
+				)
+			}
 			<PartnerBrand href="https://104.com.tw/">
 				<img {..._104} alt="104 Logo" class="h-16" loading="lazy" />
 			</PartnerBrand>
