@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+
+const { width, height, src, name, description } = Astro.props;
+---
+
+<div class="flex flex-col items-center gap-2 text-center">
+	<Image
+		width={width}
+		height={height}
+		loading="lazy"
+		src={src}
+		alt={name}
+		class="h-48 object-contain"
+	/>
+	<h3 class="mt-2 text-lg font-semibold">{name}</h3>
+	<span>
+		{description}
+	</span>
+</div>

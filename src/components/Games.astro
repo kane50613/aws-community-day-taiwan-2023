@@ -1,0 +1,40 @@
+---
+import { cn, containerStyle } from "../lib/utils";
+import { Image } from "astro:assets";
+import Game from "./Game.astro";
+---
+
+<div
+	id="games"
+	class={cn(
+		containerStyle,
+		"flex flex-col gap-8 py-12 md:py-16 scroll-mt-16",
+	)}
+>
+	<h2 class="text-2xl font-bold leading-snug md:text-3xl">
+		特色活動 不容錯過！
+	</h2>
+	<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+		<Game
+			width="1280"
+			height="960"
+			src="https://pages.awscmd.tw/8D534C3B-2CA4-4587-9369-C5D876717971/1669212903306.jpeg"
+			name="AWS BuilderCards"
+			description="一起來玩 AWS 桌遊！AWS BuilderCards是一款有趣且具有教育意義的卡牌桌遊，讓我們一起透過桌遊探索 AWS 服務的排列組合！"
+		/>
+		<Game
+			name="AWS Jam"
+			width="1000"
+			height="1000"
+			src="https://pages.awscmd.tw/8D534C3B-2CA4-4587-9369-C5D876717971/awsjam.png"
+			description="AWS Jam 是一個以遊戲化設計、高度互動、團隊合作為基礎建構的雲端技能實戰訓練活動。與同儕一起探索極限！"
+		/>
+		<Game
+			name="AWS DeepRacer"
+			width="275"
+			height="300"
+			src="https://pages.awscmd.tw/8D534C3B-2CA4-4587-9369-C5D876717971/deepracer.png"
+			description="AWS DeepRacer 讓您透過趣味十足的方式開始強化學習 (Reinforcement Learning, RL)！訓練您自己的強化學習模型以控制實體賽車自動駕駛。"
+		/>
+	</div>
+</div>
