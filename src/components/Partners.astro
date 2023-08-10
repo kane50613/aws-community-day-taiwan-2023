@@ -9,7 +9,7 @@ import ecv from "@/assets/ecv.svg";
 import kspdigi from "@/assets/kspdigi.svg";
 import { Image } from "astro:assets";
 
-const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
+// const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
 ---
 
 <div id="sponsors" class="scroll-mt-16 py-12 md:py-16">
@@ -37,18 +37,14 @@ const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
 					loading="lazy"
 				/>
 			</PartnerBrand>
-			{
-				isStaging && (
-					<PartnerBrand href="https://www.facebook.com/kspdigi/">
-						<img
-							{...kspdigi}
-							alt="智慧高軟 Logo"
-							class="h-16 w-auto"
-							loading="lazy"
-						/>
-					</PartnerBrand>
-				)
-			}
+			<PartnerBrand href="https://www.facebook.com/kspdigi/">
+				<img
+					{...kspdigi}
+					alt="智慧高軟 Logo"
+					class="h-16 w-auto"
+					loading="lazy"
+				/>
+			</PartnerBrand>
 			<PartnerBrand href="https://104.com.tw/">
 				<img {..._104} alt="104 Logo" class="h-16" loading="lazy" />
 			</PartnerBrand>
@@ -61,6 +57,11 @@ const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
 				/>
 			</PartnerBrand>
 		</ul>
-		<span>更多企業持續加入中，敬請期待</span>
+		<div>
+			<span>更多企業持續加入中，敬請期待！聯繫窗口：</span>
+			<a href="mailto:sponsor@awscmd.tw" class="text-blue-600">
+				sponsor@awscmd.tw
+			</a>
+		</div>
 	</div>
 </div>
