@@ -1,6 +1,8 @@
 ---
 import { cn, containerStyle } from "../lib/utils";
-import { IconArrowRight } from "@tabler/icons-react";
+import Speaker from "./Speaker.astro";
+import sher from "@/assets/speakers/sher.jpg";
+import michelle from "@/assets/speakers/michelle.jpeg";
 ---
 
 <div
@@ -9,20 +11,44 @@ import { IconArrowRight } from "@tabler/icons-react";
 		background:
 			"linear-gradient(135deg, #252525 0%, #373737 0.01%, #232323 100%)",
 	}}
-	class="py-12 md:py-16 scroll-mt-16"
+	class="scroll-mt-16 py-12 md:py-16"
 >
-	<div class={cn(containerStyle, "flex flex-col gap-8")}>
-		<div class="flex justify-between">
-			<h2 class="font-bold text-2xl md:text-3xl leading-snug text-white">
-				活動議程
-			</h2>
-			<IconArrowRight
-				color="white"
-				stroke="1.25"
-				width="36"
-				height="36"
+	<div class={cn(containerStyle, "flex flex-col gap-8 text-white")}>
+		<h2 class="text-center text-2xl font-bold leading-snug md:text-3xl">
+			活動議程
+		</h2>
+		<h3 class="text-xl font-semibold">大會主題演講 | Keynote</h3>
+		<div class="flex flex-col gap-4">
+			<span
+				>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+				eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+				enim ad minim veniam, quis nostrud exercitation ullamco laboris
+				nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+				in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+				nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+				sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</span>
+		</div>
+		<div
+			class="grid grid-cols-1 gap-4 text-center sm:grid-cols-2 md:grid-cols-3"
+		>
+			<Speaker
+				name="佘日新"
+				image={sher}
+				title="逢甲大學講座教授兼大學社會責任中心執行長"
+			/>
+			<Speaker
+				name="Denny Lee"
+				image="https://microsites.databricks.com/sites/default/files/media/images/dataaisummit_speaker/Databricks_Denny-Lee_ev_1673479827597001ZdCI.jpg"
+				title="Sr. Staff Developer Advocate, Databricks"
+			/>
+			<Speaker
+				name="Michelle"
+				image={michelle}
+				title="Sr. Business Development Manager,"
+				extraTitle="AWS Training and Certification"
 			/>
 		</div>
-		<span class="text-gray-100">精彩議程即將公開，敬請期待</span>
+		<!--<span class="text-gray-100">更多精彩議程即將公開，敬請期待</span>-->
 	</div>
 </div>

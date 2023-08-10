@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+const { name, title, image, extraTitle } = Astro.props;
+---
+
+<div class="flex flex-col items-center">
+	<Image
+		width="300"
+		height="300"
+		src={image}
+		class="aspect-square w-28 rounded-full object-cover md:w-32"
+		alt={name}
+		loading="lazy"
+	/>
+	<span class="mb-1 mt-4 text-lg font-semibold">{name}</span>
+	<span class="text-sm">
+		{title}
+		{
+			extraTitle && (
+				<>
+					<br />
+					{extraTitle}
+				</>
+			)
+		}
+	</span>
+</div>
