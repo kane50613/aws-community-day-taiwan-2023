@@ -39,28 +39,43 @@ const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
 				<img
 					{...ecv}
 					alt="eCloudvalley 伊雲谷數位科技 Logo"
-					class="h-16 w-auto"
+					class="h-20 w-auto"
 					loading="lazy"
 				/>
 			</PartnerBrand>
 			<PartnerBrand href="https://www.facebook.com/kspdigi/">
-				<img {...kspdigi} alt="智慧高軟 Logo" class="w-auto" loading="lazy" />
+				<img
+					{...kspdigi}
+					alt="智慧高軟 Logo"
+					class="h-20 object-contain sm:h-auto"
+					loading="lazy"
+				/>
 			</PartnerBrand>
 			<PartnerBrand href="https://104.com.tw/">
-				<img {..._104} alt="104 Logo" class="h-16" loading="lazy" />
+				<img
+					{..._104}
+					alt="104 Logo"
+					class="h-20 object-contain sm:h-auto"
+					loading="lazy"
+				/>
 			</PartnerBrand>
 			<PartnerBrand href="https://www.isweety.com.tw/">
 				<Image
 					src={iSweety}
 					alt="iSWEETY Logo"
-					class="h-16 w-auto"
+					class="h-20 object-contain sm:h-auto"
 					loading="lazy"
 				/>
 			</PartnerBrand>
 			{
 				isStaging && (
 					<PartnerBrand href="https://www.databricks.com/">
-						<Image src={databricks} alt="databricks Logo" loading="lazy" />
+						<Image
+							src={databricks}
+							alt="databricks Logo"
+							loading="lazy"
+							class="h-12 object-contain sm:h-auto"
+						/>
 					</PartnerBrand>
 				)
 			}
