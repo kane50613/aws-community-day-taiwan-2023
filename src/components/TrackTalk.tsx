@@ -5,9 +5,9 @@ export const TrackTalk: FC<{
 	title?: string;
 	speaker?: string;
 }> = ({ title, speaker }) => (
-	<div className="flex flex-col items-center gap-2 py-4 text-center">
+	<div className="flex flex-col items-center gap-2 py-2.5 text-center md:py-4">
 		{title && (
-			<span className="text-sm font-medium md:text-base">
+			<span className="text-sm font-medium leading-loose md:text-base">
 				<Balancer>{title}</Balancer>
 			</span>
 		)}
