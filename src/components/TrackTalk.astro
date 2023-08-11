@@ -1,15 +1,17 @@
 ---
+import Balancer from "react-wrap-balancer";
+
 interface Props {
 	title: string;
 	speaker: string;
-	time: string;
 }
 
-const { title, speaker, time } = Astro.props;
+const { title, speaker } = Astro.props;
 ---
 
-<div class="flex flex-col">
-	<span>{title}</span>
-	<span>{speaker}</span>
-	<span>{time}</span>
+<div class="flex flex-col items-center gap-2 py-4 text-center">
+	<span class="font-medium">
+		<Balancer>{title}</Balancer>
+	</span>
+	<span class="text-sm text-gray-300">{speaker}</span>
 </div>

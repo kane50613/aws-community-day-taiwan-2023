@@ -3,7 +3,7 @@ import { cn, containerStyle } from "../lib/utils";
 import Speaker from "./Speaker.astro";
 import sher from "@/assets/speakers/sher.jpg";
 import michelle from "@/assets/speakers/michelle.jpeg";
-// import TrackTalk from "./TrackTalk.astro";
+import TrackTalk from "./TrackTalk.astro";
 
 // const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
 ---
@@ -49,44 +49,120 @@ import michelle from "@/assets/speakers/michelle.jpeg";
 				extraTitle="AWS Training and Certification"
 			/>
 		</div>
-		<!--<h3 class="text-xl font-semibold">Track A</h3>-->
-		<!--<table>-->
-		<!--	<thead>-->
-		<!--		<tr>-->
-		<!--			<th>時間</th>-->
-		<!--			<th>Track A</th>-->
-		<!--			<th>Track B</th>-->
-		<!--		</tr>-->
-		<!--	</thead>-->
-		<!--	<tbody>-->
-		<!--		<tr>-->
-		<!--			<td>10:55 ~ 11:35</td>-->
-		<!--			<td>-->
-		<!--				<TrackTalk-->
-		<!--					title="我從工程師變成架構師的心路歷程"-->
-		<!--					speaker="Gordon Wei"-->
-		<!--				/>-->
-		<!--			</td>-->
-		<!--			<td>-->
-		<!--				<TrackTalk-->
-		<!--					title="AWS Amplify x Flutter 打造數十萬用戶的天氣 App - 天氣即時預報 on AWS"-->
-		<!--					speaker="Eric Ruan"-->
-		<!--				/>-->
-		<!--			</td>-->
-		<!--			<td>-->
-		<!--				<TrackTalk-->
-		<!--					title="AWS Amplify x Flutter 打造數十萬用戶的天氣 App - 天氣即時預報 on AWS"-->
-		<!--					speaker="Eric Ruan"-->
-		<!--				/>-->
-		<!--			</td>-->
-		<!--		</tr>-->
-		<!--	</tbody>-->
-		<!--	<li>-->
-		<!--		Eric Ruan - AWS Amplify x Flutter 打造數十萬用戶的天氣 App - -->
-		<!--		天氣即時預報 on AWS-->
-		<!--	</li>-->
-		<!--	<li>我從工程師變成架構師的心路歷程</li>-->
-		<!--</table>-->
+		<h3 class="text-xl font-semibold">Track A</h3>
+		<table class="border-collapse">
+			<thead>
+				<tr>
+					<th>時間</th>
+					<th>Track A</th>
+					<th>Track B</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="whitespace-nowrap text-sm text-white/80"
+						>10:55 ~ 11:35</td
+					>
+					<td>
+						<TrackTalk
+							title="我從工程師變成架構師的心路歷程"
+							speaker="Gordon Wei"
+						/>
+					</td>
+					<td>
+						<TrackTalk
+							title="AWS CDK 打造 MongoDB Atlas Serverless 應用"
+							speaker="Pahud Hsieh"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td class="text-sm text-white/80">11:45 ~ 12:25</td>
+					<td>
+						<TrackTalk
+							title="AWS Amplify x Flutter 打造數十萬用戶的天氣 App - 天氣即時預報 on AWS"
+							speaker="Eric Ruan"
+						/>
+					</td>
+					<td>
+						<TrackTalk title="Track B(2)" speaker="Ernest" />
+					</td>
+				</tr>
+				<tr>
+					<td class="text-sm text-white/80">12:35 ~ 13:15</td>
+					<td>
+						<TrackTalk title="Track A (3)" speaker="徐方繹" />
+					</td>
+					<td>
+						<TrackTalk
+							title="SaaS 軟體 PM 必備的技術觀念 - AWS 與軟體資安"
+							speaker="Ray Lin"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td class="text-sm text-white/80">13:25 ~ 14:05</td>
+					<td>
+						<TrackTalk title="Track A (4)" speaker="Bob" />
+					</td>
+					<td>
+						<TrackTalk
+							title="藉助 AWS 日誌數據分析創新方案 完美結合資訊安全與服務應用任務"
+							speaker="Samuel"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td class="text-sm text-white/80">14:15 ~ 14:55</td>
+					<td>
+						<TrackTalk
+							title="Stable Diffusion 如何助力商業創新"
+							speaker="Eric Liou"
+						/>
+					</td>
+					<td>
+						<TrackTalk title="Track B(5)" speaker="Denise" />
+					</td>
+				</tr>
+				<tr>
+					<td class="text-sm text-white/80">15:05 ~ 15:45</td>
+					<td>
+						<TrackTalk
+							title="資料領域的應用"
+							speaker="Scott Hsieh"
+						/>
+					</td>
+					<td>
+						<TrackTalk
+							title="Amazon CodeWhisperer（暫定）"
+							speaker="舒安"
+						/>
+						<TrackTalk
+							title="AI 線上平台找音樂音效，提升影像、行銷與社會成效"
+							speaker="Frinny"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td class="text-sm text-white/80">15:50 ~ 16:00</td>
+					<td>
+						<TrackTalk title="Lightning Talk" />
+					</td>
+					<td>
+						<TrackTalk title="-" />
+					</td>
+				</tr>
+				<tr>
+					<td class="text-sm text-white/80">16:00 ~ 16:30</td>
+					<td>
+						<TrackTalk title="深度參會抽獎及合照" />
+					</td>
+					<td>
+						<TrackTalk title="-" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
 		<span class="text-center text-xl font-semibold text-gray-100">
 			更多精彩議程即將公開，敬請期待
 		</span>
