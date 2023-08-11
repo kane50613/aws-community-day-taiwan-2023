@@ -3,11 +3,11 @@ interface Props {
 	href: string;
 }
 
-const { href } = Astro.props;
+const { href, ...props } = Astro.props;
 ---
 
-<li>
-	<a href={href} rel="noopener" target="_blank">
+<li {...props}>
+	<a href={href} rel="sponsored" target="_blank">
 		<slot />
 	</a>
 </li>
