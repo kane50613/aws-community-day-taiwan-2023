@@ -14,15 +14,12 @@ export const EmailForm = () => {
 
 			if (!/^\S+@\S+\.\S+$/.test(value)) return alert("錯誤的 Email");
 
-			fetch(
-				"https://pobtd17gf3.execute-api.us-east-1.amazonaws.com/Prod",
-				{
-					method: "POST",
-					body: JSON.stringify({
-						email: email.current.value,
-					}),
-				},
-			)
+			fetch("https://pobtd17gf3.execute-api.us-east-1.amazonaws.com/Prod", {
+				method: "POST",
+				body: JSON.stringify({
+					email: email.current.value,
+				}),
+			})
 				.then((response) => {
 					if (!response.ok)
 						alert(`訂閱電子報發生了錯誤: ${response.statusText}`);
