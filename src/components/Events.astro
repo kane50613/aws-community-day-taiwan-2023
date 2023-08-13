@@ -3,7 +3,20 @@ import { cn, containerStyle } from "../lib/utils";
 import Speaker from "./Speaker.astro";
 import sher from "@/assets/speakers/sher.jpg";
 import michelle from "@/assets/speakers/michelle.jpeg";
-import { TrackTalk } from "./TrackTalk";
+import ericRuan from "@/assets/speakers/eric-ruan.jpg";
+import gordon from "@/assets/speakers/gordon.jpg";
+import pahudHsieh from "@/assets/speakers/pahud-hsieh.jpg";
+import rayLin from "@/assets/speakers/ray-lin.jpg";
+import shuAn from "@/assets/speakers/shu-an.jpg";
+import samuel from "@/assets/speakers/samuel.jpg";
+import ScottHsieh from "@/assets/speakers/scott-hsieh.jpg";
+import wyneTan from "@/assets/speakers/wyne-tan.jpg";
+import ethanHung from "@/assets/speakers/ethan-hung.jpg";
+import frinnyLee from "@/assets/speakers/frinny-lee.jpg";
+import ericLiou from "@/assets/speakers/ericliou.jpg";
+import fngiShiu from "@/assets/speakers/fngi-shiu.jpg";
+import mingXu from "@/assets/speakers/ming-xu.jpeg";
+import TrackTalk from "./TrackTalk.astro";
 
 // const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
 ---
@@ -66,13 +79,15 @@ import { TrackTalk } from "./TrackTalk";
 					<td>
 						<TrackTalk
 							title="從地上爬到天空飛, 我怎麼辦到的 (From On-Prem To Cloud, how did I do that )"
-							speaker="Gordon Wei"
+							speaker="Gordon"
+							avatar={[gordon]}
 						/>
 					</td>
 					<td>
 						<TrackTalk
 							title="AWS CDK 打造 MongoDB Atlas Serverless 應用"
 							speaker="Pahud Hsieh"
+							avatar={[pahudHsieh]}
 						/>
 					</td>
 				</tr>
@@ -84,6 +99,7 @@ import { TrackTalk } from "./TrackTalk";
 						<TrackTalk
 							title="AWS Amplify x Flutter 打造數十萬用戶的天氣 App - 天氣即時預報 on AWS"
 							speaker="Eric Ruan"
+							avatar={[ericRuan]}
 						/>
 					</td>
 					<td>
@@ -95,12 +111,17 @@ import { TrackTalk } from "./TrackTalk";
 						>12:35 ~ 13:15</td
 					>
 					<td>
-						<TrackTalk title="精彩議程 即將公開" speaker="徐方繹" />
+						<TrackTalk
+							title="AWS Security Hub Best Practices"
+							speaker="徐方繹 & 許哲銘"
+							avatar={[fngiShiu, mingXu]}
+						/>
 					</td>
 					<td>
 						<TrackTalk
 							title="SaaS 軟體 PM 必備的技術觀念 - AWS 與軟體資安"
 							speaker="Ray Lin"
+							avatar={[rayLin]}
 						/>
 					</td>
 				</tr>
@@ -115,6 +136,7 @@ import { TrackTalk } from "./TrackTalk";
 						<TrackTalk
 							title="藉助 AWS 日誌數據分析創新方案 完美結合資訊安全與服務應用任務"
 							speaker="Samuel"
+							avatar={[samuel]}
 						/>
 					</td>
 				</tr>
@@ -126,10 +148,15 @@ import { TrackTalk } from "./TrackTalk";
 						<TrackTalk
 							title="Stable Diffusion 如何助力商業創新"
 							speaker="Eric Liou"
+							avatar={[ericLiou]}
 						/>
 					</td>
 					<td>
-						<TrackTalk title="雲端安全那點小事" speaker="Ethan" />
+						<TrackTalk
+							title="雲端安全那點小事"
+							speaker="Ethan Hung"
+							avatar={[ethanHung]}
+						/>
 					</td>
 				</tr>
 				<tr class="border-b border-gray-400/50">
@@ -137,13 +164,23 @@ import { TrackTalk } from "./TrackTalk";
 						>15:05 ~ 15:45</td
 					>
 					<td>
-						<TrackTalk title="資料領域的應用" speaker="Scott Hsieh" />
+						<TrackTalk
+							title="資料領域的應用"
+							speaker="Scott Hsieh"
+							avatar={[ScottHsieh]}
+							fill
+						/>
 					</td>
 					<td>
-						<TrackTalk title="精彩議程 即將公開" speaker="舒安" />
+						<TrackTalk
+							title="精彩議程 即將公開"
+							speaker="舒安"
+							avatar={[shuAn]}
+						/>
 						<TrackTalk
 							title="打造國際級AI平台：最大化影視音製作效率"
-							speaker="Frinny"
+							speaker="Frinny Lee"
+							avatar={[frinnyLee]}
 						/>
 					</td>
 				</tr>
@@ -195,7 +232,8 @@ import { TrackTalk } from "./TrackTalk";
 					<td>
 						<TrackTalk
 							title="一日系列 | 雲端工程師 Build a full-stack website using the CDK tool"
-							speaker="Wyne & Ernest"
+							speaker="Wyne Tan & Ernest"
+							avatar={[wyneTan]}
 						/>
 					</td>
 				</tr>

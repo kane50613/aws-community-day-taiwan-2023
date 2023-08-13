@@ -1,0 +1,36 @@
+---
+import { BalancerTitle } from "./BalancerTitle";
+import { Image } from "astro:assets";
+import { cn } from "../lib/utils";
+
+const { title, speaker, avatar = [], fill } = Astro.props;
+---
+
+<div class="flex flex-col items-center gap-2 py-2.5 text-center md:py-4">
+	{
+		title && (
+			<BalancerTitle class="text-sm font-medium leading-loose md:text-base">
+				{title}
+			</BalancerTitle>
+		)
+	}
+	<div class="flex items-center gap-3">
+		{
+			avatar?.map((image) => (
+				<Image
+					alt={speaker ?? "講者頭像"}
+					src={image}
+					class={cn(
+						"aspect-square w-8 rounded-full object-contain",
+						fill && "bg-white",
+					)}
+					width="48"
+					loading="lazy"
+				/>
+			))
+		}
+		<div>
+			{speaker && <span class="text-sm text-gray-300">{speaker}</span>}
+		</div>
+	</div>
+</div>
