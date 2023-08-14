@@ -6,31 +6,33 @@ import { cn } from "../lib/utils";
 const { title, speaker, avatar = [], fill } = Astro.props;
 ---
 
-<div class="flex flex-col items-center gap-2 py-2.5 text-center md:py-4">
-	{
-		title && (
-			<BalancerTitle class="text-sm font-medium leading-loose md:text-base">
-				{title}
-			</BalancerTitle>
-		)
-	}
-	<div class="flex items-center gap-3">
+<div class="flex flex-row items-center gap-2 px-2 py-2.5 text-center md:py-4">
+	<div class="flex flex-shrink-0 flex-col gap-2 md:flex-row">
 		{
 			avatar?.map((image) => (
 				<Image
 					alt={speaker ?? "講者頭像"}
 					src={image}
 					class={cn(
-						"aspect-square w-8 rounded-full object-contain",
+						"aspect-square w-6 rounded-full object-contain md:w-16",
 						fill && "bg-white",
 					)}
-					width="48"
+					width="128"
 					loading="lazy"
 				/>
 			))
 		}
+	</div>
+	<div class="flex flex-col items-start text-start">
+		{
+			title && (
+				<BalancerTitle className="text-xs font-medium leading-loose md:text-base">
+					{title}
+				</BalancerTitle>
+			)
+		}
 		<div>
-			{speaker && <span class="text-sm text-gray-300">{speaker}</span>}
+			{speaker && <span class="text-xs text-gray-300/80">{speaker}</span>}
 		</div>
 	</div>
 </div>
