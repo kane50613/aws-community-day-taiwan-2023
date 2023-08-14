@@ -6,8 +6,10 @@ import { cn } from "../lib/utils";
 const { title, speaker, avatar = [], fill } = Astro.props;
 ---
 
-<div class="flex flex-row items-center gap-2 px-2 py-2.5 text-center md:py-4">
-	<div class="flex flex-shrink-0 flex-col gap-2 md:flex-row">
+<div
+	class="flex flex-col-reverse items-start gap-2 px-2 py-2.5 text-center sm:flex-row sm:items-center md:py-4"
+>
+	<div class="flex flex-shrink-0 gap-2">
 		{
 			avatar?.map((image) => (
 				<Image
