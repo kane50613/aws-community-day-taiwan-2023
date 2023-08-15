@@ -1,7 +1,8 @@
 ---
 import { cn, containerStyle } from "../lib/utils";
-import { Image } from "astro:assets";
 import Game from "./Game.astro";
+import gameDay from "@/assets/gameday.jpg";
+import jam from "@/assets/awsjam.jpg";
 ---
 
 <div
@@ -21,17 +22,13 @@ import Game from "./Game.astro";
 		/>
 		<Game
 			name="AWS Jam"
-			width="1000"
-			height="1000"
-			src="https://pages.awscmd.tw/8D534C3B-2CA4-4587-9369-C5D876717971/awsjam.png"
+			src={jam}
 			description="AWS Jam 是一個以遊戲化設計、高度互動、團隊合作為基礎建構的雲端技能實戰訓練活動。與同儕一起探索極限！"
 		/>
 		<Game
-			name="AWS DeepRacer"
-			width="275"
-			height="300"
-			src="https://pages.awscmd.tw/8D534C3B-2CA4-4587-9369-C5D876717971/deepracer.png"
-			description="AWS DeepRacer 讓您透過趣味十足的方式開始強化學習 (Reinforcement Learning, RL)！訓練您自己的強化學習模型以控制實體賽車自動駕駛。"
+			name="AWS GameDay 英雄聯盟"
+			src={gameDay}
+			description="AWS GameDay 是一款基於 AWS 雲端運算建構、高度互動性且遊戲化的的雲端運算挑戰活動，玩家將能取得 Riot Games 所提供的《英雄聯盟》電競比賽賽事資料打造 AI 預測模型，爭取抱回大獎的機會。"
 		/>
 	</div>
 </div>
