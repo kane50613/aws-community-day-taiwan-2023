@@ -1,5 +1,39 @@
 ---
 import { cn, containerStyle } from "../lib/utils";
+import Helper from "./Helper.astro";
+import chouchanching from "@/assets/helpers/chouchanching.jpg";
+import rickychen from "@/assets/helpers/rickychen.jpg";
+import chenminli642 from "@/assets/helpers/chenminli642.jpg";
+import kos8123 from "@/assets/helpers/kos8123.jpg";
+import _30619tim from "@/assets/helpers/30619tim.jpg";
+import daydreamsyndromes from "@/assets/helpers/daydreamsyndromes.jpg";
+import willyboyshy from "@/assets/helpers/willyboyshy.jpg";
+import ooii8929 from "@/assets/helpers/ooii8929.jpg";
+import dino2895un from "@/assets/helpers/dino2895un.jpg";
+import jeng from "@/assets/helpers/jeng.jpg";
+import irene119110 from "@/assets/helpers/irene119110.jpg";
+import gx91090 from "@/assets/helpers/gx91090.jpg";
+import kira070725 from "@/assets/helpers/kira070725.jpeg";
+import minimumhsu from "@/assets/helpers/minimumhsu.jpg";
+import kked from "@/assets/helpers/kk-ed.jpg";
+import luu1122333 from "@/assets/helpers/luu1122333.jpg";
+import ccssll120061203 from "@/assets/helpers/ccssll120061203.jpg";
+import mandychung2018 from "@/assets/helpers/mandychung2018.jpg";
+import allen355200 from "@/assets/helpers/allen355200.jpg";
+import fngiShiu from "@/assets/helpers/fngi-shiu.jpg";
+import nashNcku from "@/assets/helpers/nash-ncku.jpg";
+import inyunch from "@/assets/helpers/inyunch.jpeg";
+import wwendy030938 from "@/assets/helpers/wwendy030938.jpg";
+import jacky21601 from "@/assets/helpers/jacky21601.jpg";
+import box789987 from "@/assets/helpers/box789987.jpg";
+import brlin from "@/assets/helpers/brlin.jpeg";
+import ckg860116 from "@/assets/helpers/ckg860116.jpg";
+import sharonlin2010 from "@/assets/helpers/sharonlin2010.jpg";
+import _0819ella from "@/assets/helpers/0819ella.jpg";
+import kane from "@/assets/helpers/kane.jpg";
+import sonywuu from "@/assets/helpers/sonywuu.jpg";
+import amy from "@/assets/helpers/amy.jpg";
+import frankyChen from "@/assets/helpers/franky-chen.jpeg";
 ---
 
 <div
@@ -8,5 +42,82 @@ import { cn, containerStyle } from "../lib/utils";
 	<h2 class="text-center text-2xl font-bold leading-snug md:text-3xl">
 		Amazing People
 	</h2>
-	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"></div>
+	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+		<Helper name="Amy Lee" image={amy} />
+		<Helper name="Franky Chen" title="Arcloud, CEO" image={frankyChen} />
+		<Helper name="Brian Chou" title="資深電子工程師" image={chouchanching} />
+		<Helper
+			name="Lily"
+			title="昕儒科技（工作室）, 研究員"
+			image={chenminli642}
+		/>
+		<Helper
+			name="RickyChen"
+			title="昕儒科技（工作室）, 負責人"
+			image={rickychen}
+		/>
+		<Helper name="餅乾" title="Student" image={kos8123} />
+		<Helper
+			name="Yen-Ting(Tim) Kuo"
+			title="逢甲大學, Student"
+			image={_30619tim}
+		/>
+		<Helper
+			name="Zhi-Jia (Willy) Yang"
+			title="學校, 學生"
+			image={willyboyshy}
+		/>
+		<Helper name="進倫" title="行政助理" image={daydreamsyndromes} />
+		<Helper name="Willy Hsiao" title="逢甲大學, 學生" image={jeng} />
+		<Helper name="Dino chou" title="台中教育大學, 學生" image={dino2895un} />
+		<Helper name="Alvin Lin" title="KKCompany, SRE" image={ooii8929} />
+		<Helper name="RuRu Cheng" title="iFUS, 專案總監" image={irene119110} />
+		<Helper name="小魚" title="玉山銀行, 專員" image={gx91090} />
+		<Helper
+			name="Jill Chen"
+			title="台灣天氣股份有限公司, Co-founder"
+			image={kira070725}
+		/>
+		<Helper
+			name="Jung-Lun (Minimum) Hsu"
+			title="KKCompany, Site Reliability Engineer"
+			image={minimumhsu}
+		/>
+		<Helper name="Edward Oo" title="KKCompany, Sre" image={kked} />
+		<Helper name="Chali lee" title="智慧高軟, 組長" />
+		<Helper name="小松" title="國立中央大學, 學生" image={ccssll120061203} />
+		<Helper name="Jimmy" title="逢甲大學, 學生" image={luu1122333} />
+		<Helper name="Min" title="逢甲大學, 學生" image={mandychung2018} />
+		<Helper
+			name="Allen Hsieh"
+			title="Senior Software Engineer"
+			image={allen355200}
+		/>
+		<Helper
+			name="Fngi"
+			title="GDG Taipei, Organizer"
+			image={fngiShiu}
+			href="https://www.linkedin.com/in/fngishiu"
+		/>
+		<Helper name="Nash Hsu" title="臺灣大學, 研究助理" image={nashNcku} />
+		<Helper name="Ingrid" title="Explora, Data Consultant" image={inyunch} />
+		<Helper name="weiwei" title="專案經理" image={wwendy030938} />
+		<Helper name="紹書" title="全端工程師" image={jacky21601} />
+		<Helper name="Ching-Wen (Nola) Chang" image={box789987} />
+		<Helper
+			name="Steven or BR"
+			title="BETO Group/國立臺中科技大學資工所, 軟體工程師"
+			image={brlin}
+		/>
+		<Helper name="林詠萱" title="玉山銀行, 專員" image={ckg860116} />
+		<Helper name="Sharon" title="104, Data engineer" image={sharonlin2010} />
+		<Helper name="Ella Yang" title="逢甲大學, 學生" image={_0819ella} />
+		<Helper
+			name="Kane Wang"
+			title="Yeecord, Lead Developer"
+			image={kane}
+			href="https://yeecord.com/"
+		/>
+		<Helper name="伍柏霖" title="學生" image={sonywuu} />
+	</div>
 </div>

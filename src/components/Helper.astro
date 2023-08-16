@@ -1,3 +1,31 @@
-<div>
-	<Image />
+---
+import { Image } from "astro:assets";
+
+const { name, image, href } = Astro.props;
+---
+
+<div class="flex flex-row justify-center gap-4 py-2">
+	{
+		image && (
+			<Image
+				src={image}
+				width="500"
+				alt={name}
+				height="500"
+				class="aspect-square h-14 w-14 rounded-lg object-cover"
+				loading="lazy"
+			/>
+		)
+	}
+	<div class="flex flex-grow flex-col justify-center gap-1">
+		{
+			href ? (
+				<a class="font-medium" target="_blank" href={href}>
+					{name}
+				</a>
+			) : (
+				<span class="font-medium">{name}</span>
+			)
+		}
+	</div>
 </div>
