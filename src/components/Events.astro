@@ -3,6 +3,7 @@ import { Provider } from "react-wrap-balancer";
 import { cn, containerStyle } from "../lib/utils";
 import Speaker from "./Speaker.astro";
 import sher from "@/assets/speakers/sher.jpg";
+import richBowen from "@/assets/speakers/rich-bowen.jpg";
 import michelle from "@/assets/speakers/michelle.jpeg";
 import ericRuan from "@/assets/speakers/eric-ruan.jpg";
 import gordon from "@/assets/speakers/gordon.jpg";
@@ -47,8 +48,13 @@ import TrackTalk from "./TrackTalk.astro";
 				</span>
 			</div>
 			<div
-				class="grid grid-cols-1 gap-4 text-center sm:grid-cols-2 md:grid-cols-3"
+				class="grid grid-cols-1 gap-4 text-center sm:grid-cols-2 md:grid-cols-4"
 			>
+				<Speaker
+					name="Rich Bowen"
+					image={richBowen}
+					title="AWS Open Source Principal Evangelist and Vice President of Conferences of the Apache"
+				/>
 				<Speaker
 					name="佘日新"
 					image={sher}

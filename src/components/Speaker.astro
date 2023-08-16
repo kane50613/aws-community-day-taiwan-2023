@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import { BalancerTitle } from "./BalancerTitle";
 const { name, title, image, extraTitle } = Astro.props;
 ---
 
@@ -8,12 +9,12 @@ const { name, title, image, extraTitle } = Astro.props;
 		width="300"
 		height="300"
 		src={image}
-		class="aspect-square w-28 rounded-full object-cover md:w-32"
+		class="aspect-square w-24 rounded-full object-cover md:w-28"
 		alt={name}
 		loading="lazy"
 	/>
 	<span class="mb-1 mt-4 text-lg font-semibold">{name}</span>
-	<span class="text-sm text-white/70">
+	<BalancerTitle ratio="0.5" className="text-sm text-white/70">
 		{title}
 		{
 			extraTitle && (
@@ -23,5 +24,5 @@ const { name, title, image, extraTitle } = Astro.props;
 				</>
 			)
 		}
-	</span>
+	</BalancerTitle>
 </div>
