@@ -3,7 +3,7 @@ import { BalancerTitle } from "./BalancerTitle";
 import { Image } from "astro:assets";
 import { cn } from "../lib/utils";
 
-const { title, speaker, avatar = [], fill } = Astro.props;
+const { title, speaker, avatar = [], fill, description } = Astro.props;
 ---
 
 <div
@@ -35,6 +35,7 @@ const { title, speaker, avatar = [], fill } = Astro.props;
 		}
 		<div>
 			{speaker && <span class="text-xs text-gray-300/80">{speaker}</span>}
+			{description && <span class="text-xs text-white/60">{description}</span>}
 		</div>
 	</div>
 </div>
