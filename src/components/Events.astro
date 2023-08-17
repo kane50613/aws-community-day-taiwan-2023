@@ -95,7 +95,7 @@ import TrackTalk from "./TrackTalk.astro";
 								title="從地上爬到天空飛, 我怎麼辦到的 (From On-Prem To Cloud, how did I do that )"
 								speaker="Gordon"
 								href="https://www.kmp.tw/"
-								description="iKala Cloud, Solutions Architect"
+								description="AWS, Community Builders / iKala Cloud, Solutions Architect"
 								avatar={[gordon]}
 							/>
 						</td>
@@ -117,18 +117,25 @@ import TrackTalk from "./TrackTalk.astro";
 							<TrackTalk
 								title="精彩議程 即將公開"
 								speaker="Ernest Chiang"
-								description="AWS, Community Hero"
+								description="AWS, Community Hero / PAFERS Tech, Director of Product & Technology Integration"
 								href="https://twitter.com/dwchiang"
 							/>
 						</td>
 						<td>
 							<TrackTalk
 								title="AWS Security Hub Best Practices"
-								speaker="Fngi Shiu & Ming Xu"
+								speaker="Fngi Shiu"
 								description="GDG Taipei, Organizer"
 								href="https://www.linkedin.com/in/fngishiu/"
 								avatar={[fngiShiu, mingXu]}
-							/>
+							>
+								<div class="text-xs sm:text-sm" slot="extra-speaker">
+									<span class="mr-2 text-white/70">Ming Xu</span>
+									<span class="text-xs text-white/60"
+										>iKala Cloud, Customer Engineer</span
+									>
+								</div>
+							</TrackTalk>
 						</td>
 					</tr>
 					<tr class="border-b border-gray-400/50">
@@ -148,7 +155,7 @@ import TrackTalk from "./TrackTalk.astro";
 							<TrackTalk
 								title="SaaS 軟體 PM 必備的技術觀念 - AWS 與軟體資安"
 								speaker="Ray Lin"
-								description="iFUS System Consultants Ltd., COO/CISO"
+								description="AWS, Security Hero / iFUS System Consultants Ltd., COO/CISO"
 								href="https://www.linkedin.com/in/raylin-meta-pm/"
 								avatar={[rayLin]}
 							/>
@@ -162,6 +169,7 @@ import TrackTalk from "./TrackTalk.astro";
 							<TrackTalk
 								title="Performance Optimization for DynamoDB and Glue through Custom Lens WA"
 								speaker="Ray Wang"
+								description="AWS, Solutions Architect"
 								avatar={[rayWang]}
 							/>
 						</td>
@@ -169,7 +177,7 @@ import TrackTalk from "./TrackTalk.astro";
 							<TrackTalk
 								title="藉助 AWS 日誌數據分析創新方案 完美結合資訊安全與服務應用任務"
 								speaker="Samuel"
-								description="淮南寰宇, 技術經理"
+								description="Why-Not Universal Co., Ltd., Solution Consultant"
 								href="https://www.linkedin.com/in/samuel-lin-89940097/"
 								avatar={[samuel]}
 							/>
@@ -183,15 +191,24 @@ import TrackTalk from "./TrackTalk.astro";
 							<TrackTalk
 								title="Stable Diffusion 如何助力商業創新"
 								speaker="Eric Liou"
+								description="AWS, Solutions Architect"
 								avatar={[ericLiou]}
 							/>
 						</td>
 						<td>
 							<TrackTalk
 								title="勇敢抵禦！怕痛的我，把防禦力點滿就對了：探索OpenAppSec在AWS上的無懼之道！"
-								speaker="Ethan Hung & Astroicers"
+								speaker="Ethan Hung"
+								description="Check Point, Cloud Security Architect"
 								avatar={[ethanHung, astroicers]}
-							/>
+							>
+								<div class="text-xs sm:text-sm" slot="extra-speaker">
+									<span class="mr-2 text-white/70">Astroicers</span>
+									<span class="text-xs text-white/60"
+										>eCloudvalley Digital Technology, Cyber Security Engineer</span
+									>
+								</div>
+							</TrackTalk>
 						</td>
 					</tr>
 					<tr class="border-b border-gray-400/50">
@@ -202,7 +219,7 @@ import TrackTalk from "./TrackTalk.astro";
 							<TrackTalk
 								title="資料領域的應用"
 								speaker="考特"
-								description="一零四資訊科技股份有限公司, 資料架構師"
+								description="AWS, Data Hero"
 								href="https://www.linkedin.com/in/shu-jeng-hsieh-5b479543"
 								avatar={[ScottHsieh]}
 								fill
@@ -284,11 +301,15 @@ import TrackTalk from "./TrackTalk.astro";
 						<td>
 							<TrackTalk
 								title="一日系列 | 雲端工程師 Build a full-stack website using the CDK tool"
-								speaker="Wyne Tan & Ernest"
+								speaker="Wyne Tan"
 								description="AWS, Community Builder"
 								href="https://www.linkedin.com/in/tan-wei-jie-wyne-5b27b9156/"
 								avatar={[wyneTan]}
-							/>
+							>
+								<div class="text-xs sm:text-sm" slot="extra-speaker">
+									<span class="mr-2 text-white/70">Ernest</span>
+								</div>
+							</TrackTalk>
 						</td>
 					</tr>
 				</tbody>

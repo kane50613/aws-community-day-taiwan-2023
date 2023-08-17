@@ -49,5 +49,6 @@ const { title, speaker, avatar = [], fill, description, href } = Astro.props;
 			}
 			{description && <span class="text-xs text-white/60">{description}</span>}
 		</div>
+		<slot name="extra-speaker"/>
 	</div>
 </div>
