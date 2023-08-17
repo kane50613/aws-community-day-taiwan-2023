@@ -35,20 +35,16 @@ const { title, speaker, avatar = [], fill, description, href } = Astro.props;
 		}
 		<div class="text-xs sm:text-sm">
 			{
+				// anchor link will have left space if prettier format that
+				// prettier-ignore
 				href ? (
-					<!-- anchor link will have left space if prettier format that -->
-					<!-- prettier-ignore -->
-					<a
-						href={href}
-						target="_blank"
-						class="mr-1.5 text-blue-400 underline"
-					>{speaker}</a>
+					<a href={href} target="_blank" class="mr-1.5 text-blue-400 underline">{speaker}</a>
 				) : (
-					<span class="mr-2 text-white/70">{speaker}</span>
+					<span class="mr-1.5 text-white/70">{speaker}</span>
 				)
 			}
 			{description && <span class="text-xs text-white/60">{description}</span>}
 		</div>
-		<slot name="extra-speaker"/>
+		<slot name="extra-speaker" />
 	</div>
 </div>
