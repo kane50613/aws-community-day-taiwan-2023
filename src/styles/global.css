@@ -4,11 +4,14 @@
 
 @layer base {
 	h1,
+	h2,
+	h3,
 	span,
 	a,
+	td,
+	th,
 	button {
-		font-family: "Hiragino Kaku Gothic Pro", "WenQuanYi Zen Hei", "微軟正黑體",
-			"蘋果儷中黑", -apple-system, Helvetica, Arial, sans-serif;
+		font-family: -apple-system, "微軟正黑體", "Microsoft JhengHei", Helvetica, Arial, sans-serif;
 	}
 }
 

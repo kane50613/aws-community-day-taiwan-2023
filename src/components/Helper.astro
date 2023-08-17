@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 
-const { name, image, href } = Astro.props;
+const { name, image, href, title } = Astro.props;
 ---
 
 <div class="flex flex-row justify-center gap-4 py-2">
@@ -27,5 +27,6 @@ const { name, image, href } = Astro.props;
 				<span class="font-medium">{name}</span>
 			)
 		}
+		{title && <span class="text-sm text-black/75">{title}</span>}
 	</div>
 </div>
