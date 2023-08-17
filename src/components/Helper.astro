@@ -20,7 +20,7 @@ const { name, image, href, title } = Astro.props;
 	<div class="flex flex-grow flex-col items-start justify-center gap-1">
 		{
 			href ? (
-				<a class="font-medium" target="_blank" href={href}>
+				<a class="font-medium underline" target="_blank" href={href}>
 					{name}
 				</a>
 			) : (

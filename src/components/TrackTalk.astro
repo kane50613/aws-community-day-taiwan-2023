@@ -3,7 +3,7 @@ import { BalancerTitle } from "./BalancerTitle";
 import { Image } from "astro:assets";
 import { cn } from "../lib/utils";
 
-const { title, speaker, avatar = [], fill, description } = Astro.props;
+const { title, speaker, avatar = [], fill, description, href } = Astro.props;
 ---
 
 <div
@@ -25,7 +25,7 @@ const { title, speaker, avatar = [], fill, description } = Astro.props;
 			))
 		}
 	</div>
-	<div class="flex flex-col items-start text-start">
+	<div class="flex flex-col items-start gap-1 text-start">
 		{
 			title && (
 				<BalancerTitle className="text-xs font-medium leading-loose md:text-base">
@@ -34,7 +34,19 @@ const { title, speaker, avatar = [], fill, description } = Astro.props;
 			)
 		}
 		<div>
-			{speaker && <span class="text-xs text-gray-300/80">{speaker}</span>}
+			{
+				href ? (
+					<a
+						class="mr-2 text-xs text-blue-400 underline sm:text-sm"
+						href={href}
+						target="_blank"
+					>
+						{speaker}
+					</a>
+				) : (
+					<span class="mr-2 text-xs text-white/70 sm:text-sm">{speaker}</span>
+				)
+			}
 			{description && <span class="text-xs text-white/60">{description}</span>}
 		</div>
 	</div>
