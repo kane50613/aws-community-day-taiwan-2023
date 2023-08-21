@@ -21,6 +21,7 @@ import fngiShiu from "@/assets/speakers/fngi-shiu.jpg";
 import joshua from "@/assets/speakers/joshua.jpg";
 import mingXu from "@/assets/speakers/ming-xu.jpeg";
 import astroicers from "@/assets/speakers/astroicers.jpg";
+import ernestChiang from "@/assets/speakers/ernest-chiang.jpg";
 import TrackTalk from "./TrackTalk.astro";
 
 // const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
@@ -96,7 +97,7 @@ import TrackTalk from "./TrackTalk.astro";
 								title="從地上爬到天空飛, 我怎麼辦到的 (From On-Prem To Cloud, how did I do that )"
 								speaker="Gordon"
 								href="https://www.kmp.tw/"
-								description="AWS, Community Builders / iKala Cloud, Solutions Architect"
+								description="AWS, Community Builder / iKala Cloud, Solutions Architect"
 								avatar={[gordon]}
 							/>
 						</td>
@@ -116,10 +117,11 @@ import TrackTalk from "./TrackTalk.astro";
 						>
 						<td>
 							<TrackTalk
-								title="精彩議程 即將公開"
+								title="隕石級 AI 來惹，還要學 AWS 嗎？ - 十年拆解整合的旅人觀點"
 								speaker="Ernest Chiang"
 								description="AWS, Community Hero / PAFERS Tech, Director of Product & Technology Integration"
 								href="https://twitter.com/dwchiang"
+								avatar={[ernestChiang]}
 							/>
 						</td>
 						<td>
@@ -131,7 +133,11 @@ import TrackTalk from "./TrackTalk.astro";
 								avatar={[fngiShiu, mingXu]}
 							>
 								<div class="text-xs sm:text-sm" slot="extra-speaker">
-									<span class="mr-1.5 text-white/70">Ming Xu</span>
+									<a
+										class="mr-1.5 text-blue-400 underline"
+										target="_blank"
+										href="https://www.linkedin.com/in/puff666/">Ming Xu</a
+									>
 									<span class="text-xs text-white/60"
 										>iKala Cloud, Customer Engineer</span
 									>
@@ -147,7 +153,7 @@ import TrackTalk from "./TrackTalk.astro";
 							<TrackTalk
 								title="AWS Amplify x Flutter 打造數十萬用戶的天氣 App - 天氣即時預報 on AWS"
 								speaker="Eric Ruan"
-								description="Wealert Co., Ltd., Co-founder & COO"
+								description="AWS, Community Builder / Wealert Co., Ltd., Co-founder & COO"
 								href="https://www.linkedin.com/in/ycjuan/"
 								avatar={[ericRuan]}
 							/>
@@ -296,7 +302,7 @@ import TrackTalk from "./TrackTalk.astro";
 						>
 						<td>
 							<TrackTalk
-								title="Chalk Talk"
+								title="Chalk Talk - 新創之旅 ~ 多帳號控制與成本管理"
 								speaker="Joshua"
 								description="iSWEETY 艾思維特, CTO"
 								avatar={[joshua]}
@@ -311,12 +317,16 @@ import TrackTalk from "./TrackTalk.astro";
 							<TrackTalk
 								title="一日系列 | 雲端工程師 Build a full-stack website using the CDK tool"
 								speaker="Wyne Tan"
-								description="AWS, Community Builder / Goodder Co., Data Team Lead Manager"
+								description="Wyne Tan  AWS, Community Builder / WeGrow, CEO"
 								href="https://www.linkedin.com/in/tan-wei-jie-wyne-5b27b9156/"
-								avatar={[wyneTan]}
+								avatar={[wyneTan, ernestChiang]}
 							>
 								<div class="text-xs sm:text-sm" slot="extra-speaker">
-									<span class="mr-1.5 text-white/70">Ernest Chiang</span>
+									<a
+										href="https://twitter.com/dwchiang"
+										target="_blank"
+										class="mr-1.5 text-blue-400 underline">Ernest Chiang</a
+									>
 									<span class="text-xs text-white/60">
 										AWS, Community Hero / PAFERS Tech, Director of Product &
 										Technology Integration</span
