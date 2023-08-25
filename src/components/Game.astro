@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 
-const { width, height, src, name, description } = Astro.props;
+const { width, height, time, src, name, description } = Astro.props;
 ---
 
 <div class="flex flex-col items-center gap-2 text-center">
@@ -14,6 +14,7 @@ const { width, height, src, name, description } = Astro.props;
 		class="h-48 object-contain"
 	/>
 	<h3 class="mt-2 text-lg font-semibold">{name}</h3>
+	{time && <span class="opacity-75">{time}</span>}
 	<span>
 		{description}
 	</span>

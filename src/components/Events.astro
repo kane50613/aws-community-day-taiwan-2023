@@ -22,7 +22,12 @@ import joshua from "@/assets/speakers/joshua.jpg";
 import mingXu from "@/assets/speakers/ming-xu.jpeg";
 import astroicers from "@/assets/speakers/astroicers.jpg";
 import ernestChiang from "@/assets/speakers/ernest-chiang.jpg";
-import TrackTalk from "./TrackTalk.astro";
+import TrackTalk from "./track/TrackTalk.astro";
+import TrackRow from "./track/TrackRow.astro";
+import TrackTime from "./track/TrackTime.astro";
+import TrackTalkContainer from "./track/TrackTalkContainer.astro";
+import TrackTalkSpeakerLink from "./track/TrackTalkSpeakerLink.astro";
+import TrackTalkDescription from "./track/TrackTalkDescription.astro";
 
 // const isStaging = import.meta.env.NODE_ENV === "staging" || import.meta.env.DEV;
 ---
@@ -81,17 +86,15 @@ import TrackTalk from "./TrackTalk.astro";
 			<h3 class="text-xl font-semibold">豐富議程資訊</h3>
 			<table>
 				<thead>
-					<tr class="border-b border-gray-400/50">
+					<TrackRow>
 						<th>時間</th>
 						<th>Track A</th>
 						<th>Track B</th>
-					</tr>
+					</TrackRow>
 				</thead>
 				<tbody>
-					<tr class="border-b border-gray-400/50">
-						<td class="text-xs text-white/80 sm:text-sm md:whitespace-nowrap"
-							>10:55 ~ 11:35</td
-						>
+					<TrackRow>
+						<TrackTime>10:55 ~ 11:35</TrackTime>
 						<td>
 							<TrackTalk
 								title="從地上爬到天空飛, 我怎麼辦到的 (From On-Prem To Cloud, how did I do that )"
@@ -110,11 +113,9 @@ import TrackTalk from "./TrackTalk.astro";
 								avatar={[pahudHsieh]}
 							/>
 						</td>
-					</tr>
-					<tr class="border-b border-gray-400/50">
-						<td class="text-xs text-white/80 sm:text-sm md:whitespace-nowrap"
-							>11:45 ~ 12:25</td
-						>
+					</TrackRow>
+					<TrackRow>
+						<TrackTime>11:45 ~ 12:25</TrackTime>
 						<td>
 							<TrackTalk
 								title="隕石級 AI 來惹，還要學 AWS 嗎？ - 十年拆解整合的旅人觀點"
@@ -132,23 +133,21 @@ import TrackTalk from "./TrackTalk.astro";
 								href="https://www.linkedin.com/in/fngishiu/"
 								avatar={[fngiShiu, mingXu]}
 							>
-								<div class="text-xs sm:text-sm" slot="extra-speaker">
-									<a
-										class="mr-1.5 text-blue-400 underline"
-										target="_blank"
-										href="https://www.linkedin.com/in/puff666/">Ming Xu</a
+								<TrackTalkContainer slot="extra-speaker">
+									<TrackTalkSpeakerLink
+										href="https://www.linkedin.com/in/puff666/"
 									>
-									<span class="text-xs text-white/60"
-										>iKala Cloud, Customer Engineer</span
-									>
-								</div>
+										Ming Xu
+									</TrackTalkSpeakerLink>
+									<TrackTalkDescription>
+										iKala Cloud, Customer Engineer
+									</TrackTalkDescription>
+								</TrackTalkContainer>
 							</TrackTalk>
 						</td>
-					</tr>
-					<tr class="border-b border-gray-400/50">
-						<td class="text-xs text-white/80 sm:text-sm md:whitespace-nowrap"
-							>12:35 ~ 13:15</td
-						>
+					</TrackRow>
+					<TrackRow>
+						<TrackTime>12:35 ~ 13:15</TrackTime>
 						<td>
 							<TrackTalk
 								title="AWS Amplify x Flutter 打造數十萬用戶的天氣 App - 天氣即時預報 on AWS"
@@ -167,11 +166,9 @@ import TrackTalk from "./TrackTalk.astro";
 								avatar={[rayLin]}
 							/>
 						</td>
-					</tr>
-					<tr class="border-b border-gray-400/50">
-						<td class="text-xs text-white/80 sm:text-sm md:whitespace-nowrap"
-							>13:25 ~ 14:05</td
-						>
+					</TrackRow>
+					<TrackRow>
+						<TrackTime>13:25 ~ 14:05</TrackTime>
 						<td>
 							<TrackTalk
 								title="Performance Optimization for DynamoDB and Glue through Custom Lens WA"
@@ -190,11 +187,9 @@ import TrackTalk from "./TrackTalk.astro";
 								avatar={[samuel]}
 							/>
 						</td>
-					</tr>
-					<tr class="border-b border-gray-400/50">
-						<td class="text-xs text-white/80 sm:text-sm md:whitespace-nowrap"
-							>14:15 ~ 14:55</td
-						>
+					</TrackRow>
+					<TrackRow>
+						<TrackTime>14:15 ~ 14:55</TrackTime>
 						<td>
 							<TrackTalk
 								title="Stable Diffusion 如何助力商業創新"
@@ -212,23 +207,21 @@ import TrackTalk from "./TrackTalk.astro";
 								description="Check Point, Cloud Security Architect"
 								avatar={[ethanHung, astroicers]}
 							>
-								<div class="text-xs sm:text-sm" slot="extra-speaker">
-									<a
-										class="mr-1.5 text-blue-400 underline"
+								<TrackTalkContainer slot="extra-speaker">
+									<TrackTalkSpeakerLink
 										href="https://www.linkedin.com/in/chi-hsiu-chen-897528172/"
-										>Astroicers</a
 									>
-									<span class="text-xs text-white/60"
-										>eCloudvalley Digital Technology, Cyber Security Engineer</span
-									>
-								</div>
+										Astroicers
+									</TrackTalkSpeakerLink>
+									<TrackTalkDescription>
+										eCloudvalley Digital Technology, Cyber Security Engineer
+									</TrackTalkDescription>
+								</TrackTalkContainer>
 							</TrackTalk>
 						</td>
-					</tr>
-					<tr class="border-b border-gray-400/50">
-						<td class="text-xs text-white/80 sm:text-sm md:whitespace-nowrap"
-							>15:05 ~ 15:25</td
-						>
+					</TrackRow>
+					<TrackRow>
+						<TrackTime>15:05 ~ 15:25</TrackTime>
 						<td rowspan="2">
 							<TrackTalk
 								title="Delta Lake 的進展以及探索透過 AWS 合適服務對 Delta Lake 進行資料分析和機器學習的應用"
@@ -248,11 +241,9 @@ import TrackTalk from "./TrackTalk.astro";
 								avatar={[frinnyLee]}
 							/>
 						</td>
-					</tr>
-					<tr class="border-b border-gray-400/50">
-						<td class="text-xs text-white/80 sm:text-sm md:whitespace-nowrap"
-							>15:25 ~ 15:45</td
-						>
+					</TrackRow>
+					<TrackRow>
+						<TrackTime>15:25 ~ 15:45</TrackTime>
 						<td>
 							<TrackTalk
 								title="Amazon CodeWhisperer"
@@ -262,79 +253,98 @@ import TrackTalk from "./TrackTalk.astro";
 								avatar={[shuAn]}
 							/>
 						</td>
-					</tr>
-					<tr class="border-b border-gray-400/50">
-						<td class="text-xs text-white/80 sm:text-sm md:whitespace-nowrap"
-							>15:50 ~ 16:00</td
-						>
+					</TrackRow>
+					<TrackRow>
+						<TrackTime>15:50 ~ 16:00</TrackTime>
 						<td>
 							<TrackTalk title="Lightning Talk" />
 						</td>
 						<td>
 							<TrackTalk title="-" />
 						</td>
-					</tr>
-					<tr class="border-b border-gray-400/50">
-						<td class="text-xs text-white/80 sm:text-sm md:whitespace-nowrap"
-							>16:00 ~ 16:30</td
-						>
+					</TrackRow>
+					<TrackRow>
+						<TrackTime>16:00 ~ 16:30</TrackTime>
 						<td>
 							<TrackTalk title="深度參會抽獎及合照" />
 						</td>
 						<td>
 							<TrackTalk title="-" />
 						</td>
-					</tr>
+					</TrackRow>
 				</tbody>
 			</table>
 			<h3 class="text-xl font-semibold">其他活動</h3>
 			<table>
 				<thead>
-					<tr class="border-b border-gray-400/50">
+					<TrackRow>
 						<th>時間</th>
 						<th>場次</th>
-					</tr>
+					</TrackRow>
 				</thead>
 				<tbody>
-					<tr class="border-b border-gray-400/50">
-						<td class="text-xs text-white/80 sm:text-sm md:whitespace-nowrap"
-							>10:55 ~ 11:35</td
-						>
+					<TrackRow>
+						<TrackTime>10:55 ~ 11:35</TrackTime>
 						<td>
 							<TrackTalk
 								title="Chalk Talk - 新創之旅 ~ 多帳號控制與成本管理"
-								speaker="Joshua"
+								speaker="Joshua (4F 外空間)"
 								description="iSWEETY 艾思維特, CTO"
 								avatar={[joshua]}
 							/>
 						</td>
-					</tr>
-					<tr class="border-b border-gray-400/50">
-						<td class="text-xs text-white/80 sm:text-sm md:whitespace-nowrap"
-							>13:45 ~ 15:45</td
-						>
+					</TrackRow>
+					<TrackRow>
+						<TrackTime>10:55 ~ 13:15</TrackTime>
+						<td>
+							<TrackTalk
+								title="AWS GameDay 英雄聯盟"
+								speaker="402 史蒂文生廳"
+							/>
+						</td>
+					</TrackRow>
+					<TrackRow>
+						<TrackTime>10:55 ~ 15:45</TrackTime>
+						<td>
+							<TrackTalk
+								title="AWS Jam Lounge"
+								speaker="302 希羅廳"
+								description="隨時加入解題"
+							/>
+						</td>
+					</TrackRow>
+					<TrackRow>
+						<TrackTime>12:00 ~ 15:45</TrackTime>
+						<td>
+							<TrackTalk
+								title="AWS Builder Cards"
+								speaker="4F 外空間"
+								description="隨時加入遊玩"
+							/>
+						</td>
+					</TrackRow>
+					<TrackRow>
+						<TrackTime>13:45 ~ 15:45</TrackTime>
 						<td>
 							<TrackTalk
 								title="一日系列 | 雲端工程師 Build a full-stack website using the CDK tool"
-								speaker="Wyne Tan"
+								speaker="Wyne Tan (402 史蒂文生廳)"
 								description="Wyne Tan  AWS, Community Builder / WeGrow, CEO"
 								href="https://www.linkedin.com/in/tan-wei-jie-wyne-5b27b9156/"
 								avatar={[wyneTan, ernestChiang]}
 							>
-								<div class="text-xs sm:text-sm" slot="extra-speaker">
-									<a
-										href="https://twitter.com/dwchiang"
-										target="_blank"
-										class="mr-1.5 text-blue-400 underline">Ernest Chiang</a
-									>
-									<span class="text-xs text-white/60">
+								<TrackTalkContainer slot="extra-speaker">
+									<TrackTalkSpeakerLink href="https://twitter.com/dwchiang">
+										Ernest Chiang
+									</TrackTalkSpeakerLink>
+									<TrackTalkDescription>
 										AWS, Community Hero / PAFERS Tech, Director of Product &
-										Technology Integration</span
-									>
-								</div>
+										Technology Integration
+									</TrackTalkDescription>
+								</TrackTalkContainer>
 							</TrackTalk>
 						</td>
-					</tr>
+					</TrackRow>
 				</tbody>
 			</table>
 			<span class="text-center text-xl font-semibold text-gray-100">
