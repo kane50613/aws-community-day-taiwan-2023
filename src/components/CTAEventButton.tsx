@@ -6,7 +6,7 @@ export const CTAEventButton: FC<ButtonHTMLAttributes<HTMLAnchorElement>> = ({
 	...props
 }) => (
 	<a
-		href="https://events.awscmd.tw/events/aws-community-day-2023/enter"
+		href="https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_3UT6yumYZU4Bjro?qsid=undefined"
 		style={{
 			background: "linear-gradient(to right, #4776E6 0%, #8E54E9 100%)",
 			boxShadow: "0px 4px 12px 2px rgba(142, 84, 233, 0.25)",
@@ -18,6 +18,6 @@ export const CTAEventButton: FC<ButtonHTMLAttributes<HTMLAnchorElement>> = ({
 		)}
 		target="_blank"
 	>
-		立即報名
+		填寫活動問卷
 	</a>
 );
