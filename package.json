@@ -12,25 +12,25 @@
 		"deploy": "NODE_ENV=production pnpm build; aws s3 rm --recursive s3://awscmd.tw/_astro/ --profile cmd; aws s3 sync ./dist s3://awscmd.tw/ --profile cmd; aws cloudfront create-invalidation --distribution-id E3M3YD0HPV4G0W --paths \"/*\" --profile cmd"
 	},
 	"dependencies": {
-		"@astrojs/react": "^2.2.1",
-		"@astrojs/tailwind": "^4.0.0",
-		"@tabler/icons-react": "^2.24.0",
-		"astro": "^2.8.0",
-		"astro-compress": "^1.1.49",
-		"class-variance-authority": "^0.6.1",
-		"clsx": "^1.2.1",
+		"@astrojs/react": "^3.0.0",
+		"@astrojs/tailwind": "^5.0.0",
+		"@tabler/icons-react": "^2.32.0",
+		"astro": "^3.0.1",
+		"astro-compress": "^2.0.14",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.0.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"react-wrap-balancer": "^1.0.0",
-		"sharp": "^0.32.1",
-		"tailwind-merge": "^1.13.2",
-		"tailwindcss": "^3.3.2"
+		"react-wrap-balancer": "^1.1.0",
+		"sharp": "^0.32.5",
+		"tailwind-merge": "^1.14.0",
+		"tailwindcss": "^3.3.3"
 	},
 	"devDependencies": {
-		"@types/react": "^18.2.14",
-		"@types/react-dom": "^18.2.6",
-		"prettier": "^2.8.8",
-		"prettier-plugin-astro": "^0.10.0",
-		"prettier-plugin-tailwindcss": "^0.3.0"
+		"@types/react": "^18.2.21",
+		"@types/react-dom": "^18.2.7",
+		"prettier": "^3.0.3",
+		"prettier-plugin-astro": "^0.12.0",
+		"prettier-plugin-tailwindcss": "^0.5.3"
 	}
 }

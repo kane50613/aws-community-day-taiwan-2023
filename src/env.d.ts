@@ -1,4 +1,4 @@
-/// <reference types="astro/client-image" />
+/// <reference types="astro/client" />
 
 interface ImportMetaEnv {
 	readonly NODE_ENV?: "staging" | "production";
