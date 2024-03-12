@@ -4,76 +4,76 @@ import aboutImage from "@/assets/about.jpg";
 import { Image } from "astro:assets";
 import { WhyReason } from "./WhyReason";
 import {
-	IconUserStar,
-	IconSocial,
-	IconSparkles,
-	IconHandClick,
-	IconExternalLink,
+  IconUserStar,
+  IconSocial,
+  IconSparkles,
+  IconHandClick,
+  IconExternalLink,
 } from "@tabler/icons-react";
 ---
 
 <div
-	id="about"
-	class={cn(
-		containerStyle,
-		"flex flex-col items-start py-8 md:py-0 gap-4 md:gap-8 scroll-mt-16",
-	)}
+  id="about"
+  class={cn(
+    containerStyle,
+    "flex flex-col items-start py-8 md:py-0 gap-4 md:gap-8 scroll-mt-16",
+  )}
 >
-	<Image
-		loading="auto"
-		width="1024"
-		src={aboutImage}
-		alt="About Community Day image"
-		class="w-full rounded-xl object-cover"
-		style={{
-			aspectRatio: aboutImage.width / aboutImage.height,
-			boxShadow: "0px 4px 12px 2px rgba(0, 0, 0, 0.25)",
-		}}
-	/>
-	<span class="!leading-loose md:text-xl"
-		>AWS Community Day Taiwan
-		是一場從活動規劃、籌備到實踐，全由社群領袖發起的交流活動。活動將邀請來自 AWS
-		的全球用戶的專家與產業領導，透過技術交流、研討會及工作坊，彼此相互交流與學習，同時讓開發人員了解與認識
-		AWS 的最新技術與最佳實踐。</span
-	>
-	<a
-		href="https://awscmd.tw/2022"
-		target="_blank"
-		class="flex gap-2 text-blue-600"
-		>回顧 AWS Community Day Taiwan 2022<IconExternalLink
-			stroke="1.5"
-			width="1em"
-		/></a
-	>
-	<div class="flex flex-col gap-10 py-8">
-		<h2 class="text-2xl font-bold leading-snug md:text-3xl">
-			你為什麼值得參與 <br />AWS Community Day Taiwan
-		</h2>
-		<div class="grid gap-5 md:grid-cols-2">
-			<WhyReason
-				title="與各領域專家學習"
-				description="PeerTalk with local specialists"
-			>
-				<IconUserStar color="white" stroke="1.25" width="48" height="48" />
-			</WhyReason>
-			<WhyReason
-				title="拓展社群關係"
-				description="Explore relationships with local technologist"
-			>
-				<IconSocial color="white" stroke="1.25" width="48" height="48" />
-			</WhyReason>
-			<WhyReason
-				title="獲得最新 AWS 技術秘辛"
-				description="Gain insight on the latest topics and AWS services"
-			>
-				<IconSparkles color="white" stroke="1.25" width="48" height="48" />
-			</WhyReason>
-			<WhyReason
-				title="獲得 AWS 實作經驗"
-				description="Get hands-on experience with AWS"
-			>
-				<IconHandClick color="white" stroke="1.25" width="48" height="48" />
-			</WhyReason>
-		</div>
-	</div>
+  <Image
+    loading="lazy"
+    width="1024"
+    src={aboutImage}
+    alt="About Community Day image"
+    class="w-full rounded-xl object-cover"
+    style={{
+      aspectRatio: aboutImage.width / aboutImage.height,
+      boxShadow: "0px 4px 12px 2px rgba(0, 0, 0, 0.25)",
+    }}
+  />
+  <span class="!leading-loose md:text-xl"
+    >AWS Community Day Taiwan
+    是一場從活動規劃、籌備到實踐，全由社群領袖發起的交流活動。活動將邀請來自 AWS
+    的全球用戶的專家與產業領導，透過技術交流、研討會及工作坊，彼此相互交流與學習，同時讓開發人員了解與認識
+    AWS 的最新技術與最佳實踐。</span
+  >
+  <a
+    href="https://awscmd.tw/2022"
+    target="_blank"
+    class="flex gap-2 text-blue-600"
+    >回顧 AWS Community Day Taiwan 2022<IconExternalLink
+      stroke="1.5"
+      width="1em"
+    /></a
+  >
+  <div class="flex flex-col gap-10 py-8">
+    <h2 class="text-2xl font-bold leading-snug md:text-3xl">
+      你為什麼值得參與 <br />AWS Community Day Taiwan
+    </h2>
+    <div class="grid gap-5 md:grid-cols-2">
+      <WhyReason
+        title="與各領域專家學習"
+        description="PeerTalk with local specialists"
+      >
+        <IconUserStar color="white" stroke="1.25" width="48" height="48" />
+      </WhyReason>
+      <WhyReason
+        title="拓展社群關係"
+        description="Explore relationships with local technologist"
+      >
+        <IconSocial color="white" stroke="1.25" width="48" height="48" />
+      </WhyReason>
+      <WhyReason
+        title="獲得最新 AWS 技術秘辛"
+        description="Gain insight on the latest topics and AWS services"
+      >
+        <IconSparkles color="white" stroke="1.25" width="48" height="48" />
+      </WhyReason>
+      <WhyReason
+        title="獲得 AWS 實作經驗"
+        description="Get hands-on experience with AWS"
+      >
+        <IconHandClick color="white" stroke="1.25" width="48" height="48" />
+      </WhyReason>
+    </div>
+  </div>
 </div>

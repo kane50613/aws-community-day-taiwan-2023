@@ -1,10 +1,9 @@
 /// <reference types="astro/client" />
 
 interface ImportMetaEnv {
-	readonly NODE_ENV?: "staging" | "production";
-	// more env variables...
+  readonly NODE_ENV?: "staging" | "production";
 }
 
 interface ImportMeta {
-	readonly env: ImportMetaEnv;
+  readonly env: ImportMetaEnv;
 }

@@ -33,323 +33,323 @@ import TrackTalkDescription from "./track/TrackTalkDescription.astro";
 ---
 
 <Provider>
-	<div
-		id="events"
-		style={{
-			background:
-				"linear-gradient(135deg, #252525 0%, #373737 0.01%, #232323 100%)",
-		}}
-		class="scroll-mt-16 py-12 md:py-16"
-	>
-		<div class={cn(containerStyle, "flex flex-col gap-8 text-white")}>
-			<h2 class="text-center text-2xl font-bold leading-snug md:text-3xl">
-				活動議程
-			</h2>
-			<h3 class="text-xl font-semibold">大會主題演講 | Keynote</h3>
-			<h4 class="-mt-4 font-medium text-gray-200">9:30 ~ 10:45</h4>
-			<div class="flex flex-col gap-4">
-				<span class="leading-loose">
-					AWS Community Day Taiwan 2023
-					大會主題演講中，將以「學習」與「交流」為主軸，邀請到逢甲大學大學社會責任中心執行長佘日新講座教授分享雲端應用加速產業數位轉型發展趨勢與案例以及
-					Databricks Sr. Developer Advocate Denny Lee
-					將分享在資料科學與人工智慧領域的雲平台應用，並由 AWS 資深培訓經理
-					Michelle 為大家介紹雲端最新學習資源及方針。
-				</span>
-			</div>
-			<div
-				class="grid grid-cols-1 gap-4 text-center sm:grid-cols-2 md:grid-cols-4"
-			>
-				<Speaker
-					name="Rich Bowen"
-					image={richBowen}
-					title="AWS Open Source Principal Evangelist and Vice President of Conferences of the Apache"
-					description="(遠距參會)"
-				/>
-				<Speaker
-					name="佘日新"
-					image={sher}
-					title="逢甲大學講座教授兼大學社會責任中心執行長"
-				/>
-				<Speaker
-					name="Denny Lee"
-					image="https://microsites.databricks.com/sites/default/files/media/images/dataaisummit_speaker/Databricks_Denny-Lee_ev_1673479827597001ZdCI.jpg"
-					title="Sr. Staff Developer Advocate, Databricks"
-					description="(遠距參會)"
-				/>
-				<Speaker
-					name="Michelle Lin"
-					image={michelle}
-					title="Sr. Business Development Manager,"
-					extraTitle="AWS Training and Certification"
-				/>
-			</div>
-			<h3 class="text-xl font-semibold">豐富議程資訊</h3>
-			<table>
-				<thead>
-					<TrackRow>
-						<th>時間</th>
-						<th>Track A (301 廳)</th>
-						<th>Track B (401 廳)</th>
-					</TrackRow>
-				</thead>
-				<tbody>
-					<TrackRow>
-						<TrackTime>10:55 ~ 11:35</TrackTime>
-						<td>
-							<TrackTalk
-								title="從地上爬到天空飛, 我怎麼辦到的 (From On-Prem To Cloud, how did I do that )"
-								speaker="Gordon"
-								href="https://www.kmp.tw/"
-								description="AWS, Community Builder / iKala Cloud, Solutions Architect"
-								avatar={[gordon]}
-							/>
-						</td>
-						<td>
-							<TrackTalk
-								title="當 CDK 遇上了 MongoDB"
-								speaker="Pahud Hsieh"
-								href="https://twitter.com/pahudnet"
-								description="AWS, Solutions Architect, SDKs and Tools (遠距參會)"
-								avatar={[pahudHsieh]}
-							/>
-						</td>
-					</TrackRow>
-					<TrackRow>
-						<TrackTime>11:45 ~ 12:25</TrackTime>
-						<td>
-							<TrackTalk
-								title="隕石級 AI 來惹，還要學 AWS 嗎？ - 十年拆解整合的旅人觀點"
-								speaker="Ernest Chiang"
-								description="AWS, Community Hero / PAFERS Tech, Director of Product & Technology Integration"
-								href="https://twitter.com/dwchiang"
-								avatar={[ernestChiang]}
-							/>
-						</td>
-						<td>
-							<TrackTalk
-								title="AWS Security Hub Best Practices"
-								speaker="Fngi Shiu"
-								description="GDG Taipei, Organizer"
-								href="https://www.linkedin.com/in/fngishiu/"
-								avatar={[fngiShiu, mingXu]}
-							>
-								<TrackTalkContainer slot="extra-speaker">
-									<TrackTalkSpeakerLink
-										href="https://www.linkedin.com/in/puff666/"
-									>
-										Ming Xu
-									</TrackTalkSpeakerLink>
-									<TrackTalkDescription>
-										iKala Cloud, Customer Engineer
-									</TrackTalkDescription>
-								</TrackTalkContainer>
-							</TrackTalk>
-						</td>
-					</TrackRow>
-					<TrackRow>
-						<TrackTime>12:35 ~ 13:15</TrackTime>
-						<td>
-							<TrackTalk
-								title="AWS Amplify x Flutter 打造數十萬用戶的天氣 App - 天氣即時預報 on AWS"
-								speaker="Eric Ruan"
-								description="AWS, Community Builder / Wealert Co., Ltd., Co-founder & COO"
-								href="https://www.linkedin.com/in/ycjuan/"
-								avatar={[ericRuan]}
-							/>
-						</td>
-						<td>
-							<TrackTalk
-								title="SaaS 軟體 PM 必備的技術觀念 - AWS 與軟體資安"
-								speaker="Ray Lin"
-								description="AWS, Security Hero / iFUS System Consultants Ltd., COO/CISO"
-								href="https://www.linkedin.com/in/raylin-meta-pm/"
-								avatar={[rayLin]}
-							/>
-						</td>
-					</TrackRow>
-					<TrackRow>
-						<TrackTime>13:25 ~ 14:05</TrackTime>
-						<td>
-							<TrackTalk
-								title="Performance Optimization for DynamoDB and Glue through Custom Lens WA"
-								speaker="Ray Wang"
-								description="AWS, Solutions Architect"
-								href="https://www.linkedin.com/in/ray-wang-52039b31/"
-								avatar={[rayWang]}
-							/>
-						</td>
-						<td>
-							<TrackTalk
-								title="藉助 AWS 日誌數據分析創新方案 完美結合資訊安全與服務應用任務"
-								speaker="Samuel"
-								description="Why-Not Universal Co., Ltd., Solution Consultant"
-								href="https://www.linkedin.com/in/samuel-lin-89940097/"
-								avatar={[samuel]}
-							/>
-						</td>
-					</TrackRow>
-					<TrackRow>
-						<TrackTime>14:15 ~ 14:55</TrackTime>
-						<td>
-							<TrackTalk
-								title="Stable Diffusion 如何助力商業創新"
-								speaker="Eric Liou"
-								description="AWS, Solutions Architect"
-								href="https://www.linkedin.com/in/eric-liou-261886a2/"
-								avatar={[ericLiou]}
-							/>
-						</td>
-						<td>
-							<TrackTalk
-								title="勇敢抵禦！怕痛的我，把防禦力點滿就對了：探索 OpenAppSec 在 AWS 上的無懼之道！"
-								speaker="Ethan Hung"
-								href="https://www.linkedin.com/in/chenhan-hung-310822169"
-								description="Check Point, Cloud Security Architect"
-								avatar={[ethanHung, astroicers]}
-							>
-								<TrackTalkContainer slot="extra-speaker">
-									<TrackTalkSpeakerLink
-										href="https://www.linkedin.com/in/chi-hsiu-chen-897528172/"
-									>
-										Astroicers
-									</TrackTalkSpeakerLink>
-									<TrackTalkDescription>
-										eCloudvalley Digital Technology, Cyber Security Engineer
-									</TrackTalkDescription>
-								</TrackTalkContainer>
-							</TrackTalk>
-						</td>
-					</TrackRow>
-					<TrackRow>
-						<TrackTime>15:05 ~ 15:25</TrackTime>
-						<td rowspan="2">
-							<TrackTalk
-								title="Delta Lake 的進展以及探索透過 AWS 合適服務對 Delta Lake 進行資料分析和機器學習的應用"
-								speaker="考特"
-								description="AWS, Data Hero / 104 Corporation, Data Architect"
-								href="https://www.linkedin.com/in/shu-jeng-hsieh-5b479543"
-								avatar={[ScottHsieh]}
-								fill
-							/>
-						</td>
-						<td>
-							<TrackTalk
-								title="打造國際級AI平台：最大化影視音製作效率"
-								speaker="Frinny"
-								description="A.V. Mapping, CEO"
-								href="https://linkedin.com/in/frinnylee/"
-								avatar={[frinnyLee]}
-							/>
-						</td>
-					</TrackRow>
-					<TrackRow>
-						<TrackTime>15:25 ~ 15:45</TrackTime>
-						<td>
-							<TrackTalk
-								title="Amazon CodeWhisperer"
-								speaker="舒安"
-								description="《開發聊天機器人比你想的還簡單 》作者"
-								href="https://www.facebook.com/chinchilla.shuan"
-								avatar={[shuAn]}
-							/>
-						</td>
-					</TrackRow>
-					<TrackRow>
-						<TrackTime>15:50 ~ 16:00</TrackTime>
-						<td>
-							<TrackTalk title="Lightning Talk" />
-						</td>
-						<td>
-							<TrackTalk title="-" />
-						</td>
-					</TrackRow>
-					<TrackRow>
-						<TrackTime>16:00 ~ 16:30</TrackTime>
-						<td>
-							<TrackTalk title="深度參會抽獎及合照" />
-						</td>
-						<td>
-							<TrackTalk title="-" />
-						</td>
-					</TrackRow>
-				</tbody>
-			</table>
-			<h3 class="text-xl font-semibold">其他活動</h3>
-			<table>
-				<thead>
-					<TrackRow>
-						<th>時間</th>
-						<th>場次</th>
-					</TrackRow>
-				</thead>
-				<tbody>
-					<TrackRow>
-						<TrackTime>10:55 ~ 11:35</TrackTime>
-						<td>
-							<TrackTalk
-								title="Chalk Talk - 新創之旅 ~ 多帳號控制與成本管理"
-								speaker="Joshua (4F 外空間)"
-								description="iSWEETY 艾思維特, CTO"
-								avatar={[joshua]}
-							/>
-						</td>
-					</TrackRow>
-					<TrackRow>
-						<TrackTime>10:55 ~ 13:15</TrackTime>
-						<td>
-							<TrackTalk
-								title="AWS GameDay 英雄聯盟"
-								speaker="402 史蒂文生廳"
-							/>
-						</td>
-					</TrackRow>
-					<TrackRow>
-						<TrackTime>10:55 ~ 15:45</TrackTime>
-						<td>
-							<TrackTalk
-								title="AWS Jam Lounge"
-								speaker="302 希羅廳"
-								description="隨時加入解題"
-							/>
-						</td>
-					</TrackRow>
-					<TrackRow>
-						<TrackTime>12:00 ~ 15:45</TrackTime>
-						<td>
-							<TrackTalk
-								title="AWS Builder Cards"
-								speaker="4F 外空間"
-								description="隨時加入遊玩"
-							/>
-						</td>
-					</TrackRow>
-					<TrackRow>
-						<TrackTime>13:45 ~ 15:45</TrackTime>
-						<td>
-							<TrackTalk
-								title="一日系列 | 雲端工程師 Build a full-stack website using the CDK tool"
-								speaker="Wyne Tan (402 史蒂文生廳)"
-								description="Wyne Tan  AWS, Community Builder / WeGrow, CEO"
-								href="https://www.linkedin.com/in/tan-wei-jie-wyne-5b27b9156/"
-								avatar={[wyneTan, ernestChiang]}
-							>
-								<TrackTalkContainer slot="extra-speaker">
-									<TrackTalkSpeakerLink href="https://twitter.com/dwchiang">
-										Ernest Chiang
-									</TrackTalkSpeakerLink>
-									<TrackTalkDescription>
-										AWS, Community Hero / PAFERS Tech, Director of Product &
-										Technology Integration
-									</TrackTalkDescription>
-								</TrackTalkContainer>
-							</TrackTalk>
-						</td>
-					</TrackRow>
-				</tbody>
-			</table>
-			<span class="text-center text-xl font-semibold text-gray-100">
-				更多精彩議程即將公開，敬請期待
-			</span>
-		</div>
-	</div>
+  <div
+    id="events"
+    style={{
+      background:
+        "linear-gradient(135deg, #252525 0%, #373737 0.01%, #232323 100%)",
+    }}
+    class="scroll-mt-16 py-12 md:py-16"
+  >
+    <div class={cn(containerStyle, "flex flex-col gap-8 text-white")}>
+      <h2 class="text-center text-2xl font-bold leading-snug md:text-3xl">
+        活動議程
+      </h2>
+      <h3 class="text-xl font-semibold">大會主題演講 | Keynote</h3>
+      <h4 class="-mt-4 font-medium text-gray-200">9:30 ~ 10:45</h4>
+      <div class="flex flex-col gap-4">
+        <span class="leading-loose">
+          AWS Community Day Taiwan 2023
+          大會主題演講中，將以「學習」與「交流」為主軸，邀請到逢甲大學大學社會責任中心執行長佘日新講座教授分享雲端應用加速產業數位轉型發展趨勢與案例以及
+          Databricks Sr. Developer Advocate Denny Lee
+          將分享在資料科學與人工智慧領域的雲平台應用，並由 AWS 資深培訓經理
+          Michelle 為大家介紹雲端最新學習資源及方針。
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-1 gap-4 text-center sm:grid-cols-2 md:grid-cols-4"
+      >
+        <Speaker
+          name="Rich Bowen"
+          image={richBowen}
+          title="AWS Open Source Principal Evangelist and Vice President of Conferences of the Apache"
+          description="(遠距參會)"
+        />
+        <Speaker
+          name="佘日新"
+          image={sher}
+          title="逢甲大學講座教授兼大學社會責任中心執行長"
+        />
+        <Speaker
+          name="Denny Lee"
+          image="https://microsites.databricks.com/sites/default/files/media/images/dataaisummit_speaker/Databricks_Denny-Lee_ev_1673479827597001ZdCI.jpg"
+          title="Sr. Staff Developer Advocate, Databricks"
+          description="(遠距參會)"
+        />
+        <Speaker
+          name="Michelle Lin"
+          image={michelle}
+          title="Sr. Business Development Manager,"
+          extraTitle="AWS Training and Certification"
+        />
+      </div>
+      <h3 class="text-xl font-semibold">豐富議程資訊</h3>
+      <table>
+        <thead>
+          <TrackRow>
+            <th>時間</th>
+            <th>Track A (301 廳)</th>
+            <th>Track B (401 廳)</th>
+          </TrackRow>
+        </thead>
+        <tbody>
+          <TrackRow>
+            <TrackTime>10:55 ~ 11:35</TrackTime>
+            <td>
+              <TrackTalk
+                title="從地上爬到天空飛, 我怎麼辦到的 (From On-Prem To Cloud, how did I do that )"
+                speaker="Gordon"
+                href="https://www.kmp.tw/"
+                description="AWS, Community Builder / iKala Cloud, Solutions Architect"
+                avatar={[gordon]}
+              />
+            </td>
+            <td>
+              <TrackTalk
+                title="當 CDK 遇上了 MongoDB"
+                speaker="Pahud Hsieh"
+                href="https://twitter.com/pahudnet"
+                description="AWS, Solutions Architect, SDKs and Tools (遠距參會)"
+                avatar={[pahudHsieh]}
+              />
+            </td>
+          </TrackRow>
+          <TrackRow>
+            <TrackTime>11:45 ~ 12:25</TrackTime>
+            <td>
+              <TrackTalk
+                title="隕石級 AI 來惹，還要學 AWS 嗎？ - 十年拆解整合的旅人觀點"
+                speaker="Ernest Chiang"
+                description="AWS, Community Hero / PAFERS Tech, Director of Product & Technology Integration"
+                href="https://twitter.com/dwchiang"
+                avatar={[ernestChiang]}
+              />
+            </td>
+            <td>
+              <TrackTalk
+                title="AWS Security Hub Best Practices"
+                speaker="Fngi Shiu"
+                description="GDG Taipei, Organizer"
+                href="https://www.linkedin.com/in/fngishiu/"
+                avatar={[fngiShiu, mingXu]}
+              >
+                <TrackTalkContainer slot="extra-speaker">
+                  <TrackTalkSpeakerLink
+                    href="https://www.linkedin.com/in/puff666/"
+                  >
+                    Ming Xu
+                  </TrackTalkSpeakerLink>
+                  <TrackTalkDescription>
+                    iKala Cloud, Customer Engineer
+                  </TrackTalkDescription>
+                </TrackTalkContainer>
+              </TrackTalk>
+            </td>
+          </TrackRow>
+          <TrackRow>
+            <TrackTime>12:35 ~ 13:15</TrackTime>
+            <td>
+              <TrackTalk
+                title="AWS Amplify x Flutter 打造數十萬用戶的天氣 App - 天氣即時預報 on AWS"
+                speaker="Eric Ruan"
+                description="AWS, Community Builder / Wealert Co., Ltd., Co-founder & COO"
+                href="https://www.linkedin.com/in/ycjuan/"
+                avatar={[ericRuan]}
+              />
+            </td>
+            <td>
+              <TrackTalk
+                title="SaaS 軟體 PM 必備的技術觀念 - AWS 與軟體資安"
+                speaker="Ray Lin"
+                description="AWS, Security Hero / iFUS System Consultants Ltd., COO/CISO"
+                href="https://www.linkedin.com/in/raylin-meta-pm/"
+                avatar={[rayLin]}
+              />
+            </td>
+          </TrackRow>
+          <TrackRow>
+            <TrackTime>13:25 ~ 14:05</TrackTime>
+            <td>
+              <TrackTalk
+                title="Performance Optimization for DynamoDB and Glue through Custom Lens WA"
+                speaker="Ray Wang"
+                description="AWS, Solutions Architect"
+                href="https://www.linkedin.com/in/ray-wang-52039b31/"
+                avatar={[rayWang]}
+              />
+            </td>
+            <td>
+              <TrackTalk
+                title="藉助 AWS 日誌數據分析創新方案 完美結合資訊安全與服務應用任務"
+                speaker="Samuel"
+                description="Why-Not Universal Co., Ltd., Solution Consultant"
+                href="https://www.linkedin.com/in/samuel-lin-89940097/"
+                avatar={[samuel]}
+              />
+            </td>
+          </TrackRow>
+          <TrackRow>
+            <TrackTime>14:15 ~ 14:55</TrackTime>
+            <td>
+              <TrackTalk
+                title="Stable Diffusion 如何助力商業創新"
+                speaker="Eric Liou"
+                description="AWS, Solutions Architect"
+                href="https://www.linkedin.com/in/eric-liou-261886a2/"
+                avatar={[ericLiou]}
+              />
+            </td>
+            <td>
+              <TrackTalk
+                title="勇敢抵禦！怕痛的我，把防禦力點滿就對了：探索 OpenAppSec 在 AWS 上的無懼之道！"
+                speaker="Ethan Hung"
+                href="https://www.linkedin.com/in/chenhan-hung-310822169"
+                description="Check Point, Cloud Security Architect"
+                avatar={[ethanHung, astroicers]}
+              >
+                <TrackTalkContainer slot="extra-speaker">
+                  <TrackTalkSpeakerLink
+                    href="https://www.linkedin.com/in/chi-hsiu-chen-897528172/"
+                  >
+                    Astroicers
+                  </TrackTalkSpeakerLink>
+                  <TrackTalkDescription>
+                    eCloudvalley Digital Technology, Cyber Security Engineer
+                  </TrackTalkDescription>
+                </TrackTalkContainer>
+              </TrackTalk>
+            </td>
+          </TrackRow>
+          <TrackRow>
+            <TrackTime>15:05 ~ 15:25</TrackTime>
+            <td rowspan="2">
+              <TrackTalk
+                title="Delta Lake 的進展以及探索透過 AWS 合適服務對 Delta Lake 進行資料分析和機器學習的應用"
+                speaker="考特"
+                description="AWS, Data Hero / 104 Corporation, Data Architect"
+                href="https://www.linkedin.com/in/shu-jeng-hsieh-5b479543"
+                avatar={[ScottHsieh]}
+                fill
+              />
+            </td>
+            <td>
+              <TrackTalk
+                title="打造國際級AI平台：最大化影視音製作效率"
+                speaker="Frinny"
+                description="A.V. Mapping, CEO"
+                href="https://linkedin.com/in/frinnylee/"
+                avatar={[frinnyLee]}
+              />
+            </td>
+          </TrackRow>
+          <TrackRow>
+            <TrackTime>15:25 ~ 15:45</TrackTime>
+            <td>
+              <TrackTalk
+                title="Amazon CodeWhisperer"
+                speaker="舒安"
+                description="《開發聊天機器人比你想的還簡單 》作者"
+                href="https://www.facebook.com/chinchilla.shuan"
+                avatar={[shuAn]}
+              />
+            </td>
+          </TrackRow>
+          <TrackRow>
+            <TrackTime>15:50 ~ 16:00</TrackTime>
+            <td>
+              <TrackTalk title="Lightning Talk" />
+            </td>
+            <td>
+              <TrackTalk title="-" />
+            </td>
+          </TrackRow>
+          <TrackRow>
+            <TrackTime>16:00 ~ 16:30</TrackTime>
+            <td>
+              <TrackTalk title="深度參會抽獎及合照" />
+            </td>
+            <td>
+              <TrackTalk title="-" />
+            </td>
+          </TrackRow>
+        </tbody>
+      </table>
+      <h3 class="text-xl font-semibold">其他活動</h3>
+      <table>
+        <thead>
+          <TrackRow>
+            <th>時間</th>
+            <th>場次</th>
+          </TrackRow>
+        </thead>
+        <tbody>
+          <TrackRow>
+            <TrackTime>10:55 ~ 11:35</TrackTime>
+            <td>
+              <TrackTalk
+                title="Chalk Talk - 新創之旅 ~ 多帳號控制與成本管理"
+                speaker="Joshua (4F 外空間)"
+                description="iSWEETY 艾思維特, CTO"
+                avatar={[joshua]}
+              />
+            </td>
+          </TrackRow>
+          <TrackRow>
+            <TrackTime>10:55 ~ 13:15</TrackTime>
+            <td>
+              <TrackTalk
+                title="AWS GameDay 英雄聯盟"
+                speaker="402 史蒂文生廳"
+              />
+            </td>
+          </TrackRow>
+          <TrackRow>
+            <TrackTime>10:55 ~ 15:45</TrackTime>
+            <td>
+              <TrackTalk
+                title="AWS Jam Lounge"
+                speaker="302 希羅廳"
+                description="隨時加入解題"
+              />
+            </td>
+          </TrackRow>
+          <TrackRow>
+            <TrackTime>12:00 ~ 15:45</TrackTime>
+            <td>
+              <TrackTalk
+                title="AWS Builder Cards"
+                speaker="4F 外空間"
+                description="隨時加入遊玩"
+              />
+            </td>
+          </TrackRow>
+          <TrackRow>
+            <TrackTime>13:45 ~ 15:45</TrackTime>
+            <td>
+              <TrackTalk
+                title="一日系列 | 雲端工程師 Build a full-stack website using the CDK tool"
+                speaker="Wyne Tan (402 史蒂文生廳)"
+                description="Wyne Tan  AWS, Community Builder / WeGrow, CEO"
+                href="https://www.linkedin.com/in/tan-wei-jie-wyne-5b27b9156/"
+                avatar={[wyneTan, ernestChiang]}
+              >
+                <TrackTalkContainer slot="extra-speaker">
+                  <TrackTalkSpeakerLink href="https://twitter.com/dwchiang">
+                    Ernest Chiang
+                  </TrackTalkSpeakerLink>
+                  <TrackTalkDescription>
+                    AWS, Community Hero / PAFERS Tech, Director of Product &
+                    Technology Integration
+                  </TrackTalkDescription>
+                </TrackTalkContainer>
+              </TrackTalk>
+            </td>
+          </TrackRow>
+        </tbody>
+      </table>
+      <span class="text-center text-xl font-semibold text-gray-100">
+        更多精彩議程即將公開，敬請期待
+      </span>
+    </div>
+  </div>
 </Provider>

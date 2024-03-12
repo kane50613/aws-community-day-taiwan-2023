@@ -5,25 +5,25 @@ const { name, title, image, extraTitle, description } = Astro.props;
 ---
 
 <div class="flex flex-col items-center">
-	<Image
-		width="300"
-		height="300"
-		src={image}
-		class="aspect-square w-24 rounded-full object-cover md:w-28"
-		alt={name}
-		loading="lazy"
-	/>
-	<span class="mb-1 mt-4 text-lg font-semibold">{name}</span>
-	<BalancerTitle ratio="0.5" className="text-sm text-white/70">
-		{title}
-		{
-			extraTitle && (
-				<>
-					<br />
-					{extraTitle}
-				</>
-			)
-		}
-	</BalancerTitle>
-	{description && <span class="mt-2 text-xs text-white/60">{description}</span>}
+  <Image
+    width="300"
+    height="300"
+    src={image}
+    class="aspect-square w-24 rounded-full object-cover md:w-28"
+    alt={name}
+    loading="lazy"
+  />
+  <span class="mb-1 mt-4 text-lg font-semibold">{name}</span>
+  <BalancerTitle ratio="0.5" className="text-sm text-white/70">
+    {title}
+    {
+      extraTitle && (
+        <>
+          <br />
+          {extraTitle}
+        </>
+      )
+    }
+  </BalancerTitle>
+  {description && <span class="mt-2 text-xs text-white/60">{description}</span>}
 </div>

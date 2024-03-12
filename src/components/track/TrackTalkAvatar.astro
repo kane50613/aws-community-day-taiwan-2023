@@ -4,12 +4,12 @@ import { Image } from "astro:assets";
 ---
 
 <Image
-	alt={Astro.props.alt ?? "講者頭像"}
-	src={Astro.props.src}
-	class={cn(
-		"aspect-square w-10 rounded-full object-contain md:w-16",
-		Astro.props.fill && "bg-white",
-	)}
-	width="128"
-	loading="lazy"
+  alt={Astro.props.alt ?? "講者頭像"}
+  src={Astro.props.src}
+  class={cn(
+    "aspect-square w-10 rounded-full object-contain md:w-16",
+    Astro.props.fill && "bg-white",
+  )}
+  width="128"
+  loading="lazy"
 />

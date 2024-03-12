@@ -5,17 +5,17 @@ const { width, height, time, src, name, description } = Astro.props;
 ---
 
 <div class="flex flex-col items-center gap-2 text-center">
-	<Image
-		width={width}
-		height={height}
-		loading="lazy"
-		src={src}
-		alt={name}
-		class="h-48 object-contain"
-	/>
-	<h3 class="mt-2 text-lg font-semibold">{name}</h3>
-	{time && <span class="opacity-75">{time}</span>}
-	<span>
-		{description}
-	</span>
+  <Image
+    width={width}
+    height={height}
+    loading="lazy"
+    src={src}
+    alt={name}
+    class="h-48 object-contain"
+  />
+  <h3 class="mt-2 text-lg font-semibold">{name}</h3>
+  {time && <span class="opacity-75">{time}</span>}
+  <span>
+    {description}
+  </span>
 </div>

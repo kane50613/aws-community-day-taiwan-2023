@@ -6,39 +6,39 @@ import { CTAEventButton } from "./CTAEventButton";
 ---
 
 <div
-	class={cn(
-		containerStyle,
-		"flex md:flex-row flex-col py-8 md:py-32 gap-8 md:gap-12",
-	)}
+  class={cn(
+    containerStyle,
+    "flex md:flex-row flex-col py-8 md:py-32 gap-8 md:gap-12",
+  )}
 >
-	<div class="flex flex-shrink-0 flex-col justify-between gap-4">
-		<h1
-			class="whitespace-nowrap text-4xl font-bold !leading-relaxed sm:text-5xl lg:text-6xl"
-		>
-			專屬於 AWS <br />
-			社群愛好者的年會
-		</h1>
-		<span class="text-md font-medium !leading-loose text-gray-800 md:text-2xl">
-			致力於 AWS 愛好者之雲端技術交流與分享，
-			<br />
-			在不同產業的技術應用中達到最佳實踐的技術。
-		</span>
-	</div>
-	<div class="flex w-full flex-col gap-4">
-		<Image
-			loading="eager"
-			width="512"
-			src={heroImage}
-			alt="AWS User Group Taiwan"
-			class="w-full rounded-lg"
-			style={{
-				aspectRatio: heroImage.width / heroImage.height,
-			}}
-		/>
-		<span class="md:text-md text-sm leading-loose text-gray-800">
-			2023/08/26 (星期六) 9:30～16:30 <br />
-			台中集思新烏日會議中心 (高鐵台中站內)
-		</span>
-		<CTAEventButton className="w-full md:w-fit text-center" />
-	</div>
+  <div class="flex flex-shrink-0 flex-col justify-between gap-4">
+    <h1
+      class="whitespace-nowrap text-4xl font-bold !leading-relaxed sm:text-5xl lg:text-6xl"
+    >
+      專屬於 AWS <br />
+      社群愛好者的年會
+    </h1>
+    <span class="text-md font-medium !leading-loose text-gray-800 md:text-2xl">
+      致力於 AWS 愛好者之雲端技術交流與分享，
+      <br />
+      在不同產業的技術應用中達到最佳實踐的技術。
+    </span>
+  </div>
+  <div class="flex w-full flex-col gap-4">
+    <Image
+      loading="eager"
+      width="512"
+      src={heroImage}
+      alt="AWS User Group Taiwan"
+      class="w-full rounded-lg"
+      style={{
+        aspectRatio: heroImage.width / heroImage.height,
+      }}
+    />
+    <span class="md:text-md text-sm leading-loose text-gray-800">
+      2023/08/26 (星期六) 9:30～16:30 <br />
+      台中集思新烏日會議中心 (高鐵台中站內)
+    </span>
+    <CTAEventButton className="w-full text-center md:w-fit" />
+  </div>
 </div>
